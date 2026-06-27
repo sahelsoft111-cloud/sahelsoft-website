@@ -1,0 +1,19 @@
+﻿{
+  "name": "SAHELSOFT",
+  "short_name": "SAHELSOFT",
+  "description": "Logiciels de gestion professionnels pour entreprises, commerces, agriculture et paie.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0F172A",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/images/icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}
+

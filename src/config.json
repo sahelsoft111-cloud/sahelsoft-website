@@ -1,0 +1,84 @@
+﻿{
+  "site": {
+    "url": "https://sahelsoft.netlify.app",
+    "title": "SAHELSOFT | Logiciels de gestion professionnels au Mali",
+    "description": "SAHELSOFT développe des logiciels simples et professionnels pour gérer les stocks, l'agriculture, l'élevage, la pisciculture et la paie au Mali.",
+    "keywords": "SAHELSOFT, logiciel de gestion, gestion de stock, paie Mali, agriculture, élevage, pisciculture, Stock Flow, AgriSuivi Pro, Mali Paie Pro"
+  },
+  "brand": {
+    "name": "SAHELSOFT",
+    "slogan": "Des solutions numériques pour faire grandir votre activité.",
+    "valueProposition": "Des logiciels simples pour gérer, suivre et développer votre activité.",
+    "description": "Éditeur de logiciels spécialisé dans les solutions de gestion pour les entreprises, commerces, ONG, exploitations agricoles, élevages et piscicultures."
+  },
+  "contact": {
+    "email": "sahelsoft111@gmail.com",
+    "whatsappDisplay": "+223 76 41 79 85",
+    "whatsappNumber": "22376417985"
+  },
+  "demoLinks": {
+    "stockFlowDemoUrl": "",
+    "agriSuiviDemoUrl": "",
+    "maliPaieDemoUrl": ""
+  },
+  "paymentMethods": [
+    {
+      "name": "Orange Money",
+      "details": "+223 76 41 79 85"
+    },
+    {
+      "name": "Virement bancaire BDM",
+      "details": "Coordonnées bancaires à compléter",
+      "bank": {
+        "accountNumber": "",
+        "rib": "",
+        "swiftBic": ""
+      }
+    }
+  ],
+  "softwareCatalog": [
+    {
+      "id": "stock-flow",
+      "name": "Stock Flow",
+      "tag": "Commerce et stock",
+      "image": "/images/stock-flow.webp",
+      "demoUrlKey": "stockFlowDemoUrl",
+      "price": "50 000 FCFA",
+      "description": "Gestion commerciale et stock pour commerces, PME, ONG et entreprises.",
+      "features": ["Produits", "Inventaire", "Facturation", "TVA", "Multi-magasins", "Rapports PDF/Excel"]
+    },
+    {
+      "id": "agrisuivi-pro",
+      "name": "AgriSuivi Pro",
+      "tag": "Agriculture et élevage",
+      "image": "/images/agrisuivi-pro.webp",
+      "demoUrlKey": "agriSuiviDemoUrl",
+      "price": "30 000 FCFA",
+      "description": "Suivi des exploitations agricoles, élevages, piscicultures, recettes et dépenses.",
+      "features": ["Agriculture", "Élevage", "Pisciculture", "Dépenses", "Recettes", "Tableau de bord"]
+    },
+    {
+      "id": "mali-paie-pro",
+      "name": "Mali Paie Pro",
+      "tag": "Paie au Mali",
+      "image": "/images/mali-paie-pro.webp",
+      "demoUrlKey": "maliPaieDemoUrl",
+      "price": "75 000 FCFA",
+      "description": "Gestion professionnelle de la paie, employés, bulletins, ITS, INPS et AMO.",
+      "features": ["Employés", "Contrats", "Bulletins", "ITS", "INPS", "AMO"]
+    }
+  ],
+  "purchaseSteps": [
+    "Télécharger la démo",
+    "Tester",
+    "Contacter SAHELSOFT",
+    "Payer par Orange Money ou virement BDM",
+    "Recevoir la version définitive"
+  ],
+  "screenshotGallery": [],
+  "future": {
+    "paymentUrl": "",
+    "downloadsFolder": "/downloads/",
+    "screenshotsFolder": "/images/screenshots/"
+  }
+}
