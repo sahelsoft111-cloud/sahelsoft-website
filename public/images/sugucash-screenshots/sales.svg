@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 780" role="img" aria-label="SuguCash ventes">
+  <rect width="390" height="780" rx="44" fill="#0F172A"/>
+  <rect x="24" y="24" width="342" height="732" rx="34" fill="#FFFFFF"/>
+  <rect x="54" y="68" width="180" height="18" rx="9" fill="#0F172A" opacity=".9"/>
+  <rect x="54" y="103" width="260" height="70" rx="18" fill="#2563EB" opacity=".12"/>
+  <rect x="78" y="125" width="118" height="15" rx="7" fill="#2563EB"/>
+  <rect x="78" y="150" width="184" height="10" rx="5" fill="#64748B" opacity=".35"/>
+  <rect x="54" y="205" width="132" height="96" rx="18" fill="#F1F5F9"/>
+  <rect x="204" y="205" width="132" height="96" rx="18" fill="#F1F5F9"/>
+  <rect x="54" y="327" width="282" height="54" rx="14" fill="#F8FAFC"/>
+  <rect x="78" y="346" width="110" height="12" rx="6" fill="#0F172A" opacity=".65"/>
+  <rect x="230" y="346" width="66" height="12" rx="6" fill="#2563EB"/>
+  <rect x="54" y="400" width="282" height="54" rx="14" fill="#F8FAFC"/>
+  <rect x="78" y="419" width="134" height="12" rx="6" fill="#0F172A" opacity=".65"/>
+  <rect x="230" y="419" width="66" height="12" rx="6" fill="#2563EB"/>
+  <rect x="54" y="473" width="282" height="190" rx="18" fill="#F1F5F9"/>
+  <path d="M103 566c34-42 72-42 106 0s72 42 106 0v53c-34 42-72 42-106 0s-72-42-106 0v-53Z" fill="#2563EB" opacity=".9"/>
+  <rect x="92" y="692" width="206" height="18" rx="9" fill="#CBD5E1"/>
+</svg>

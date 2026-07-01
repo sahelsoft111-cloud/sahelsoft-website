@@ -1,7 +1,7 @@
-﻿{
-  "name": "SAHELSOFT",
-  "short_name": "SAHELSOFT",
-  "description": "Logiciels de gestion professionnels pour entreprises, commerces, agriculture et paie.",
+{
+  "name": "SahelSoft",
+  "short_name": "SahelSoft",
+  "description": "Solutions numériques professionnelles SahelSoft pour entreprises africaines",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
@@ -9,11 +9,10 @@
   "lang": "fr",
   "icons": [
     {
-      "src": "/images/icon-512.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
+      "src": "/images/sahelsoft-mark-transparent.png",
+      "sizes": "64x42",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
 }
-

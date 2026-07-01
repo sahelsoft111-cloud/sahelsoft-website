@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Logo FleetMaster</title>
+  <desc id="desc">Icône de gestion de flotte FleetMaster</desc>
+  <rect width="512" height="512" rx="112" fill="#0F172A"/>
+  <path d="M104 291h40l34-82h160l52 82h26c18 0 32 14 32 32v45h-48a54 54 0 0 1-106 0H218a54 54 0 0 1-106 0H64v-37c0-22 18-40 40-40Z" fill="#2563EB"/>
+  <path d="M202 238h111l31 49H182l20-49Z" fill="#FFFFFF" opacity=".9"/>
+  <circle cx="165" cy="368" r="25" fill="#16A34A"/>
+  <circle cx="347" cy="368" r="25" fill="#16A34A"/>
+</svg>

@@ -1,20 +1,26 @@
-﻿{
+{
   "site": {
     "url": "https://sahelsoft.netlify.app",
-    "title": "SAHELSOFT | Logiciels de gestion professionnels au Mali",
-    "description": "SAHELSOFT développe des logiciels simples et professionnels pour gérer les stocks, l'agriculture, l'élevage, la pisciculture et la paie au Mali.",
-    "keywords": "SAHELSOFT, logiciel de gestion, gestion de stock, paie Mali, agriculture, élevage, pisciculture, Stock Flow, AgriSuivi Pro, Mali Paie Pro"
+    "title": "SahelSoft | Solutions numériques professionnelles",
+    "description": "SahelSoft développe des logiciels modernes pour les entreprises, commerces, PME, ONG, exploitations agricoles et organisations africaines.",
+    "keywords": "SahelSoft, logiciels professionnels, SuguCash, gestion ventes, dépenses, dettes clients, Stock Flow, AgriSuivi Pro, FleetMaster, Mali Paie Pro"
   },
   "brand": {
-    "name": "SAHELSOFT",
+    "name": "SahelSoft",
     "slogan": "Des solutions numériques pour faire grandir votre activité.",
-    "valueProposition": "Des logiciels simples pour gérer, suivre et développer votre activité.",
-    "description": "Éditeur de logiciels spécialisé dans les solutions de gestion pour les entreprises, commerces, ONG, exploitations agricoles, élevages et piscicultures."
+    "valueProposition": "Des solutions numériques pour faire grandir votre activité.",
+    "description": "Éditeur de logiciels modernes pour les entreprises africaines.",
+    "logo": "/images/sahelsoft-logo-transparent.png",
+    "footerLogo": "/images/sahelsoft-logo-transparent.png",
+    "mark": "/images/sahelsoft-mark-transparent.png"
   },
   "contact": {
     "email": "sahelsoft111@gmail.com",
     "whatsappDisplay": "+223 76 41 79 85",
     "whatsappNumber": "22376417985"
+  },
+  "playStoreLinks": {
+    "sugucash": ""
   },
   "demoLinks": {
     "stockFlowDemoUrl": "",
@@ -36,6 +42,82 @@
       }
     }
   ],
+  "sugucash": {
+    "id": "sugucash",
+    "name": "SuguCash",
+    "logo": "/images/sugucash-logo.svg",
+    "tag": "Application Android",
+    "subtitle": "Gestion simple des ventes, dépenses et dettes clients.",
+    "status": "Disponible prochainement sur Google Play",
+    "description": "SuguCash est une application de gestion commerciale conçue pour les commerçants, boutiques, artisans et petites entreprises. Elle permet de gérer facilement les ventes, les dépenses, les dettes clients, les paiements, les bénéfices, les statistiques et les rapports PDF. L'application fonctionne hors ligne et offre une interface simple, rapide et professionnelle.",
+    "features": [
+      "Gestion des ventes",
+      "Gestion des dépenses",
+      "Gestion des dettes",
+      "Paiements partiels",
+      "Historique",
+      "Rapports PDF",
+      "Sauvegarde",
+      "Fonctionne hors ligne",
+      "Statistiques",
+      "Restauration"
+    ],
+    "screenshots": [
+      {
+        "src": "/images/sugucash-screenshots/dashboard-original.png",
+        "alt": "Capture SuguCash - tableau de bord"
+      },
+      {
+        "src": "/images/sugucash-screenshots/sale-modal-original.png",
+        "alt": "Capture SuguCash - nouvelle vente"
+      },
+      {
+        "src": "/images/sugucash-screenshots/debt-modal-original.png",
+        "alt": "Capture SuguCash - nouvelle dette client"
+      },
+      {
+        "src": "/images/sugucash-screenshots/settings-original.png",
+        "alt": "Capture SuguCash - paramètres et rapports"
+      }
+    ]
+  },
+  "applications": [
+    {
+      "id": "sugucash",
+      "name": "SuguCash",
+      "logo": "/images/sugucash-logo.svg",
+      "description": "Gestion simple des ventes, dépenses, dettes clients et paiements. Fonctionne hors ligne.",
+      "status": "Disponible prochainement sur Google Play"
+    },
+    {
+      "id": "stock-flow",
+      "name": "Stock Flow",
+      "logo": "/images/stock-flow.webp",
+      "description": "Gestion commerciale complète et suivi de stock pour commerces et PME.",
+      "status": "En développement"
+    },
+    {
+      "id": "agrisuivi-pro",
+      "name": "AgriSuivi Pro",
+      "logo": "/images/agrisuivi-pro.webp",
+      "description": "Gestion agricole, élevage, pisciculture, recettes et dépenses.",
+      "status": "En développement"
+    },
+    {
+      "id": "fleetmaster",
+      "name": "FleetMaster",
+      "logo": "/images/fleetmaster-logo.svg",
+      "description": "Gestion de flotte, véhicules, entretiens et coûts d'exploitation.",
+      "status": "En développement"
+    },
+    {
+      "id": "mali-paie-pro",
+      "name": "Mali Paie Pro",
+      "logo": "/images/mali-paie-pro.webp",
+      "description": "Gestion de paie, employés, bulletins, ITS, INPS et AMO.",
+      "status": "En développement"
+    }
+  ],
   "softwareCatalog": [
     {
       "id": "stock-flow",
@@ -55,7 +137,7 @@
       "demoUrlKey": "agriSuiviDemoUrl",
       "price": "30 000 FCFA",
       "description": "Suivi des exploitations agricoles, élevages, piscicultures, recettes et dépenses.",
-      "features": ["Agriculture", "Élevage", "Pisciculture", "Dépenses", "Recettes", "Tableau de bord"]
+      "features": ["Agriculture", "Élevage", "Pisciculture", "Dépenses", "Recettes", "Suivi global"]
     },
     {
       "id": "mali-paie-pro",
@@ -68,13 +150,17 @@
       "features": ["Employés", "Contrats", "Bulletins", "ITS", "INPS", "AMO"]
     }
   ],
-  "purchaseSteps": [
-    "Télécharger la démo",
-    "Tester",
-    "Contacter SAHELSOFT",
-    "Payer par Orange Money ou virement BDM",
-    "Recevoir la version définitive"
+  "whyChoose": [
+    "Applications professionnelles",
+    "Fonctionnement rapide et fiable",
+    "Utilisation simple et intuitive",
+    "Support technique réactif",
+    "Évolution permanente",
+    "Compatible Android"
   ],
+  "mission": {
+    "text": "Notre mission est d'accompagner la transformation numérique des entreprises africaines grâce à des logiciels modernes, simples et accessibles pour booster leur productivité et leur croissance."
+  },
   "screenshotGallery": [],
   "future": {
     "paymentUrl": "",
