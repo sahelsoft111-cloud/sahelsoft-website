@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="description" content="Centre de confidentialité des applications SahelSoft : SuguCash, AgriSuivi Pro et futures solutions." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sahelsoft.netlify.app/privacy.html" />
+    <meta property="og:title" content="Politique de confidentialité SahelSoft" />
+    <meta property="og:description" content="Centre de confidentialité des applications SahelSoft, dont SuguCash et AgriSuivi Pro." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sahelsoft.netlify.app/privacy.html" />
+    <meta property="og:image" content="https://sahelsoft.netlify.app/images/sahelsoft-logo-transparent.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Politique de confidentialité SahelSoft" />
+    <meta name="twitter:description" content="Centre de confidentialité des applications SahelSoft." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Politique de confidentialité | SahelSoft</title>
+    <style>
+      :root { color: #0f172a; font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; background: #f5f8fb; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; }
+      a { color: inherit; }
+      .top { background: #ffffff; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding: 14px 20px; position: sticky; top: 0; z-index: 20; backdrop-filter: blur(16px); }
+      .nav { max-width: 1120px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; text-decoration: none; }
+      .brand img { height: 54px; max-width: min(280px, 58vw); object-fit: contain; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; padding: 12px 16px; font-weight: 900; text-decoration: none; border: 0; transition: transform .18s ease, background .18s ease; }
+      .btn:hover { transform: translateY(-1px); }
+      .btn-primary { background: #16a34a; color: white; }
+      .btn-secondary { background: #2563eb; color: white; }
+      .hero { background: radial-gradient(circle at 14% 12%, rgba(37,99,235,.12), transparent 30%), radial-gradient(circle at 86% 8%, rgba(22,163,74,.13), transparent 28%), #ffffff; border-bottom: 1px solid #e2e8f0; }
+      .hero-inner { max-width: 1120px; margin: 0 auto; padding: 56px 20px 34px; }
+      .eyebrow { color: #2563eb; font-size: .78rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 12px; }
+      h1 { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin: 0; color: #0f172a; letter-spacing: 0; }
+      .lead { max-width: 760px; color: #475569; font-size: 1.08rem; line-height: 1.8; font-weight: 650; margin: 20px 0 0; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
+      .grid { display: grid; gap: 18px; }
+      .grid.two { grid-template-columns: 1.1fr .9fr; align-items: start; }
+      .panel { background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 16px 48px rgba(15, 23, 42, 0.10); }
+      .card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 12px 34px rgba(15,23,42,.08); }
+      .card.soft { background: linear-gradient(135deg, #eff6ff, #f0fdf4); }
+      h2 { margin-top: 32px; color: #2563eb; font-size: 1.35rem; }
+      h3 { margin: 0 0 10px; color: #0f172a; }
+      p, li { color: #475569; line-height: 1.8; font-weight: 600; }
+      ul { padding-left: 1.25rem; }
+      .feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; list-style: none; }
+      .feature-list li { border-radius: 10px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 14px; line-height: 1.45; }
+      .feature-list li::before { content: '✓'; color: #16a34a; font-weight: 900; margin-right: 8px; }
+      .app-list { display: grid; gap: 10px; margin-top: 18px; }
+      .app-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #e2e8f0; background: #fff; border-radius: 10px; padding: 14px 16px; text-decoration: none; font-weight: 900; color: #0f172a; }
+      .app-link.active { border-color: #86efac; background: #f0fdf4; color: #166534; }
+      .badge { display: inline-flex; border-radius: 999px; background: #dcfce7; color: #166534; padding: 6px 10px; font-size: .78rem; font-weight: 900; }
+      .muted { color: #64748b; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+      .footer { background: #0f172a; color: rgba(255,255,255,.72); }
+      .footer-inner { max-width: 1120px; margin: auto; padding: 28px 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+      .footer a { color: rgba(255,255,255,.84); font-weight: 800; text-decoration: none; }
+      @media (max-width: 860px) { .grid.two { grid-template-columns: 1fr; } .feature-list { grid-template-columns: 1fr; } }
+      @media (max-width: 640px) { .nav { align-items: flex-start; flex-direction: column; } .brand img { height: 46px; } .actions, .btn { width: 100%; } .hero-inner { padding-top: 38px; } }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="/"><img src="/images/sahelsoft-logo-transparent.png" alt="Logo officiel SahelSoft" /></a>
+        <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">Nous contacter</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Confidentialité</p>
+        <h1>Centre de confidentialité SahelSoft</h1>
+        <p class="lead">Retrouvez les politiques de confidentialité des applications SahelSoft. Chaque application dispose d'une page dédiée afin de respecter les exigences Google Play et d'offrir une information claire aux utilisateurs.</p>
+      </div>
+    </section>
+    <main class="wrap grid two">
+      <section class="panel">
+        <h2>Applications disponibles</h2>
+        <div class="app-list" aria-label="Pages de confidentialité des applications SahelSoft">
+          <a class="app-link" href="/privacy.html#sugucash"><span>Politique de confidentialité SuguCash</span><span class="badge">Disponible</span></a>
+          <a class="app-link active" href="/privacy/agrisuivi-pro/"><span>Politique de confidentialité AgriSuivi Pro</span><span class="badge">Disponible</span></a>
+        </div>
+        <h2>Applications prévues</h2>
+        <div class="app-list">
+          <span class="app-link"><span>Stock Flow</span><span class="muted">à venir</span></span>
+          <span class="app-link"><span>FleetMaster</span><span class="muted">à venir</span></span>
+          <span class="app-link"><span>EduFlow</span><span class="muted">à venir</span></span>
+          <span class="app-link"><span>Mali Paie Pro</span><span class="muted">à venir</span></span>
+          <span class="app-link"><span>Mobility Manager</span><span class="muted">à venir</span></span>
+        </div>
+      </section>
+      <aside class="card soft">
+        <h3>Contact confidentialité</h3>
+        <p>Pour toute question liée à la confidentialité ou aux données des applications SahelSoft :</p>
+        <p><a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></p>
+        <div class="actions">
+          <a class="btn btn-secondary" href="/">Retour à l'accueil</a>
+          <a class="btn btn-primary" href="/privacy/agrisuivi-pro/">AgriSuivi Pro</a>
+        </div>
+      </aside>
+      <section id="sugucash" class="panel">
+        <h2>Politique de confidentialité SuguCash</h2>
+        <p>SuguCash fonctionne actuellement avec un stockage local sur l'appareil de l'utilisateur. Les informations liées aux ventes, dépenses, dettes clients, paiements, historique, rapports et paramètres restent principalement sur le téléphone.</p>
+        <p>SahelSoft ne vend pas les données personnelles des utilisateurs et ne les exploite pas à des fins commerciales.</p>
+        <div class="actions">
+          <a class="btn btn-secondary" href="/">Retour à l'accueil</a>
+          <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">Nous contacter</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2026 SahelSoft. Tous droits réservés.</span>
+        <span><a href="/privacy.html">Centre confidentialité</a> · <a href="/delete-account.html">Centre suppression de compte</a> · <a href="/terms.html">Conditions d'utilisation</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
