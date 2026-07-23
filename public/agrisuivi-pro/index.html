@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="AgriSuivi Pro est une application SahelSoft permettant de gérer l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances d'une exploitation." />
+    <link rel="canonical" href="https://sahelsoft.netlify.app/agrisuivi-pro/" />
+    <meta property="og:title" content="AgriSuivi Pro | Gestion agricole, élevage et pisciculture" />
+    <meta property="og:description" content="Gérez l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances d'une exploitation avec AgriSuivi Pro." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sahelsoft.netlify.app/agrisuivi-pro/" />
+    <meta property="og:image" content="https://sahelsoft.netlify.app/images/agrisuivi-pro/agrisuivi-01-dashboard.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AgriSuivi Pro | Gestion agricole, élevage et pisciculture" />
+    <meta name="twitter:description" content="Application SahelSoft pour agriculture, élevage, pisciculture, recettes, dépenses et performances d'exploitation." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>AgriSuivi Pro | Gestion agricole, élevage et pisciculture</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AgriSuivi Pro",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android",
+        "description": "AgriSuivi Pro est une application SahelSoft permettant de gérer l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances d'une exploitation.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "SahelSoft",
+          "url": "https://sahelsoft.netlify.app"
+        },
+        "url": "https://sahelsoft.netlify.app/agrisuivi-pro/"
+      }
+    </script>
+    <style>
+      :root { color: #0f172a; font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; background: #f5f8fb; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; }
+      a { color: inherit; }
+      a:focus-visible, button:focus-visible { outline: 3px solid #86efac; outline-offset: 3px; }
+      .top { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 14px 20px; position: sticky; top: 0; z-index: 10; }
+      .nav { max-width: 1120px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+      .brand img { height: 54px; max-width: min(280px, 58vw); object-fit: contain; }
+      .nav-links { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; }
+      .nav-links a { border-radius: 8px; padding: 10px 12px; font-weight: 900; text-decoration: none; color: #0f172a; }
+      .nav-links a:hover { background: #f1f5f9; color: #16a34a; }
+      .btn { display: inline-flex; min-height: 46px; align-items: center; justify-content: center; border-radius: 8px; padding: 12px 16px; font-weight: 900; text-decoration: none; }
+      .btn-primary { background: #16a34a; color: #fff; }
+      .btn-secondary { background: #2563eb; color: #fff; }
+      .hero { background: radial-gradient(circle at 12% 14%, rgba(22,163,74,.16), transparent 30%), radial-gradient(circle at 86% 10%, rgba(37,99,235,.13), transparent 28%), #ffffff; }
+      .hero-inner { max-width: 1120px; margin: 0 auto; padding: 54px 20px 34px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 34px; align-items: center; }
+      .eyebrow { color: #16a34a; font-size: .78rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 12px; }
+      h1 { font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.02; margin: 0; }
+      h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.1; margin: 0 0 14px; }
+      h3 { margin: 0 0 10px; }
+      p, li { color: #475569; line-height: 1.75; font-weight: 650; }
+      .lead { font-size: 1.08rem; max-width: 740px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+      .preview { overflow: hidden; border-radius: 18px; border: 1px solid #bbf7d0; background: #fff; padding: 10px; box-shadow: 0 24px 80px rgba(6, 35, 63, .16); }
+      .preview img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 12px; display: block; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 44px 20px; }
+      .grid { display: grid; gap: 18px; }
+      .features { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; box-shadow: 0 12px 34px rgba(15,23,42,.08); }
+      .card strong { color: #0f172a; }
+      .gallery { display: flex; gap: 18px; overflow-x: auto; padding: 6px 2px 18px; scroll-snap-type: x mandatory; }
+      .shot { min-width: 230px; max-width: 280px; scroll-snap-align: center; }
+      .shot img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 14px; border: 1px solid #e2e8f0; background: #fff; box-shadow: 0 16px 48px rgba(15,23,42,.10); }
+      .shot p { text-align: center; margin: 10px 0 0; color: #0f172a; font-weight: 900; }
+      .legal { background: linear-gradient(135deg, #f0fdf4, #eff6ff); border: 1px solid #bbf7d0; border-radius: 14px; padding: 22px; }
+      .footer { background: #0f172a; color: rgba(255,255,255,.72); }
+      .footer-inner { max-width: 1120px; margin: auto; padding: 28px 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+      .footer a { color: rgba(255,255,255,.88); font-weight: 800; text-decoration: none; }
+      @media (max-width: 860px) { .hero-inner { grid-template-columns: 1fr; } .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+      @media (max-width: 640px) { .nav { align-items: flex-start; flex-direction: column; } .nav-links { justify-content: flex-start; } .brand img { height: 46px; } .features { grid-template-columns: 1fr; } .actions, .btn { width: 100%; } .shot { min-width: 78vw; } }
+    </style>
+  </head>
+  <body>
+    <!-- Valeurs alignées avec src/config.json : contact sahelsoft111@gmail.com, domaine sahelsoft.netlify.app. -->
+    <header class="top">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="/"><img src="/images/sahelsoft-logo-transparent.png" alt="Logo officiel SahelSoft" /></a>
+        <div class="nav-links">
+          <a href="/">Accueil</a>
+          <a href="/privacy/agrisuivi-pro/">Confidentialité</a>
+          <a href="/delete-account/agrisuivi-pro/">Suppression de compte</a>
+          <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com?subject=Demande%20AgriSuivi%20Pro">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">Agriculture, élevage et pisciculture</p>
+            <h1>AgriSuivi Pro</h1>
+            <p class="lead">AgriSuivi Pro aide à gérer l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances d'une exploitation avec une interface claire et professionnelle.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com?subject=Demande%20de%20d%C3%A9monstration%20AgriSuivi%20Pro">Demander une démonstration</a>
+              <a class="btn btn-secondary" href="/#contact">Contacter SahelSoft</a>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="/images/agrisuivi-pro/agrisuivi-01-dashboard.png" alt="AgriSuivi Pro - tableau de bord de l'exploitation" />
+          </div>
+        </div>
+      </section>
+      <section class="wrap">
+        <h2>Fonctionnalités principales</h2>
+        <div class="grid features">
+          <div class="card"><strong>Activités agricoles</strong><p>Organisez les cultures, parcelles et informations de production.</p></div>
+          <div class="card"><strong>Élevage</strong><p>Suivez les lots, quantités, ventes et performances.</p></div>
+          <div class="card"><strong>Pisciculture</strong><p>Centralisez les activités piscicoles et les indicateurs utiles.</p></div>
+          <div class="card"><strong>Lots</strong><p>Gardez une vue claire des lots et de leur évolution.</p></div>
+          <div class="card"><strong>Recettes et dépenses</strong><p>Mesurez les entrées, sorties et résultats de l'exploitation.</p></div>
+          <div class="card"><strong>Pertes</strong><p>Enregistrez les pertes pour mieux suivre les performances.</p></div>
+          <div class="card"><strong>Calendrier et tâches</strong><p>Planifiez les actions importantes et les échéances.</p></div>
+          <div class="card"><strong>Rapports et indicateurs</strong><p>Analysez les données avec des rapports utiles.</p></div>
+          <div class="card"><strong>Simple et professionnel</strong><p>Travaillez avec une interface adaptée au terrain.</p></div>
+        </div>
+      </section>
+      <section class="wrap">
+        <h2>Captures réelles</h2>
+        <div class="gallery" aria-label="Captures AgriSuivi Pro">
+          <a class="shot" href="/images/agrisuivi-pro/agrisuivi-01-dashboard.png"><img loading="lazy" decoding="async" src="/images/agrisuivi-pro/agrisuivi-01-dashboard.png" alt="Capture AgriSuivi Pro - tableau de bord" /><p>Tableau de bord</p></a>
+          <a class="shot" href="/images/agrisuivi-pro/agrisuivi-02-agriculture.png"><img loading="lazy" decoding="async" src="/images/agrisuivi-pro/agrisuivi-02-agriculture.png" alt="Capture AgriSuivi Pro - agriculture" /><p>Agriculture</p></a>
+          <a class="shot" href="/images/agrisuivi-pro/agrisuivi-03-elevage.png"><img loading="lazy" decoding="async" src="/images/agrisuivi-pro/agrisuivi-03-elevage.png" alt="Capture AgriSuivi Pro - élevage" /><p>Élevage</p></a>
+        </div>
+      </section>
+      <section class="wrap">
+        <div class="legal">
+          <h2>À propos de l'éditeur</h2>
+          <p>AgriSuivi Pro est développée et publiée par SahelSoft.</p>
+          <div class="actions">
+            <a class="btn btn-secondary" href="/privacy/agrisuivi-pro/">Politique de confidentialité</a>
+            <a class="btn btn-secondary" href="/delete-account/agrisuivi-pro/">Suppression du compte</a>
+            <a class="btn btn-secondary" href="/terms.html">Conditions d'utilisation</a>
+            <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2026 SahelSoft. Tous droits réservés.</span>
+        <span><a href="/privacy.html">Centre confidentialité</a> · <a href="/delete-account.html">Centre suppression de compte</a> · <a href="/terms.html">Conditions d'utilisation</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

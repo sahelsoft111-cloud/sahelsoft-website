@@ -50,6 +50,8 @@ Configuration incluse dans `netlify.toml` :
 
 ## Pages légales
 
+- Page SuguCash : `/sugucash/`
+- Page AgriSuivi Pro : `/agrisuivi-pro/`
 - Confidentialité SuguCash : `/privacy.html`
 - Confidentialité AgriSuivi Pro : `/privacy/agrisuivi-pro/`
 - Suppression de compte SuguCash : `/delete-account.html`
@@ -62,4 +64,4 @@ Les captures utilisées sont dans :
 - `public/images/sugucash/`
 - `public/images/agrisuivi-pro/`
 
-Les anciennes références `sugucash-screenshots` ont été supprimées.
+Les anciennes captures SuguCash ont été remplacées par les images officielles du dossier `public/images/sugucash/`.

@@ -3,7 +3,7 @@
     "url": "https://sahelsoft.netlify.app",
     "title": "SahelSoft | Solutions numériques professionnelles",
     "description": "SahelSoft développe des logiciels modernes pour les entreprises, commerces, PME, ONG, exploitations agricoles et organisations africaines.",
-    "keywords": "SahelSoft, logiciels professionnels, SuguCash, gestion ventes, dépenses, dettes clients, Stock Flow, AgriSuivi Pro, FleetMaster, Mali Paie Pro"
+    "keywords": "SahelSoft, logiciels professionnels, SuguCash, recettes, dépenses, finances personnelles, dettes, paiements, rapports financiers, AgriSuivi Pro, agriculture, élevage, pisciculture"
   },
   "brand": {
     "name": "SahelSoft",
@@ -47,20 +47,20 @@
     "name": "SuguCash",
     "logo": "/images/sugucash-logo.svg",
     "tag": "Application Android",
-    "subtitle": "Gestion simple des ventes, dépenses et dettes clients.",
+    "subtitle": "Gestion simple des recettes, dépenses, dettes et paiements.",
     "status": "Disponible prochainement sur Google Play",
-    "description": "SuguCash est une application de gestion commerciale conçue pour les commerçants, boutiques, artisans et petites entreprises. Elle permet de gérer facilement les ventes, les dépenses, les dettes clients, les paiements, les bénéfices, les statistiques et les rapports PDF. L'application fonctionne hors ligne et offre une interface simple, rapide et professionnelle.",
+    "description": "SuguCash est une application SahelSoft de gestion financière simple pour suivre les recettes, les dépenses, les dettes, les paiements, les rapports financiers et l'historique de son activité. Elle fonctionne hors ligne et offre une interface claire, rapide et professionnelle.",
     "features": [
-      "Gestion des ventes",
-      "Gestion des dépenses",
+      "Suivi des recettes",
+      "Suivi des dépenses",
       "Gestion des dettes",
       "Paiements partiels",
-      "Historique",
+      "Historique financier",
       "Rapports PDF",
-      "Sauvegarde",
+      "Sauvegarde locale",
       "Fonctionne hors ligne",
-      "Statistiques",
-      "Restauration"
+      "Statistiques financières",
+      "Paramètres"
     ],
     "screenshots": [
       {
@@ -90,7 +90,7 @@
       "id": "sugucash",
       "name": "SuguCash",
       "logo": "/images/sugucash-logo.svg",
-      "description": "Gestion simple des ventes, dépenses, dettes clients et paiements. Fonctionne hors ligne.",
+      "description": "Gestion simple des recettes, dépenses, dettes, paiements et rapports financiers. Fonctionne hors ligne.",
       "status": "Disponible prochainement sur Google Play"
     },
     {
@@ -197,7 +197,7 @@
     "name": "AgriSuivi Pro",
     "tag": "Application agriculture",
     "subtitle": "Gestion intégrée de votre exploitation.",
-    "description": "Suivez l agriculture, l élevage, les recettes, les dépenses et les performances de votre exploitation avec une présentation claire et professionnelle.",
+    "description": "Suivez l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances de votre exploitation avec une présentation claire et professionnelle.",
     "screenshots": [
       {
         "src": "/images/agrisuivi-pro/agrisuivi-01-dashboard.png",

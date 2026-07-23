@@ -69,6 +69,11 @@ const appIcons = {
   "mali-paie-pro": Users,
 };
 
+const appDetailLinks = {
+  sugucash: "/sugucash/",
+  "agrisuivi-pro": "/agrisuivi-pro/",
+};
+
 const featureIcons = [ShoppingCart, Wallet, ReceiptText, CheckCircle2, History, BarChart3, CloudUpload, WifiOff, RefreshCcw, ShieldCheck];
 const whyIcons = [Zap, Smartphone, ShieldCheck, Headphones, BarChart3, Smartphone];
 
@@ -223,6 +228,11 @@ function Applications() {
                 <span className={`mt-4 inline-flex rounded-md px-3 py-2 text-xs font-black ${app.id === "sugucash" ? "bg-green-50 text-field" : "bg-blue-50 text-ocean"}`}>
                   {app.status}
                 </span>
+                {appDetailLinks[app.id] ? (
+                  <a href={appDetailLinks[app.id]} className="mt-4 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 px-4 py-3 text-sm font-black text-ink transition hover:bg-mist hover:text-ocean">
+                    Découvrir {app.name} <ArrowRight size={16} />
+                  </a>
+                ) : null}
               </article>
             );
           })}
@@ -242,12 +252,15 @@ function SuguCashGallery() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-ocean">En vedette</p>
               <h2 className="mt-3 text-3xl font-black leading-tight text-ink">SuguCash, votre caisse dans la poche</h2>
               <p className="mt-4 leading-7 text-slate-600">
-                Gérez vos ventes, dépenses et dettes clients simplement, même sans connexion Internet. Toutes les interfaces affichées ici sont de vraies captures Android de SuguCash.
+                Gérez vos recettes, dépenses, finances personnelles, dettes et paiements simplement, même sans connexion Internet. Toutes les interfaces affichées ici sont de vraies captures Android de SuguCash.
               </p>
               <button type="button" disabled className="mt-6 inline-flex cursor-not-allowed items-center justify-center gap-3 rounded-md bg-field px-5 py-4 text-sm font-black text-white shadow-soft">
                 <span className="grid h-7 w-7 place-items-center rounded bg-white text-field">▶</span>
                 Disponible prochainement sur Google Play
               </button>
+              <a href="/sugucash/" className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 py-3 text-sm font-black text-ink shadow-soft transition hover:-translate-y-0.5 hover:bg-mist hover:text-ocean">
+                Découvrir SuguCash <ArrowRight size={16} />
+              </a>
             </div>
             <div className="flex gap-5 overflow-x-auto pb-4 pt-3 snap-x snap-mandatory [scrollbar-width:thin]">
               {sugucash.screenshots.map((shot) => (
@@ -283,8 +296,8 @@ function AgriSuiviGallery() {
               <p className="text-xs font-black uppercase tracking-[0.18em] text-field">{agriSuiviPro.tag}</p>
               <h2 className="mt-3 text-3xl font-black leading-tight text-ink">AgriSuivi Pro, toute l'exploitation sous contrôle</h2>
               <p className="mt-4 leading-7 text-slate-600">{agriSuiviPro.description}</p>
-              <a href="#tarifs" className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-field px-5 py-4 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-emerald-700">
-                Voir la solution <ArrowRight size={17} />
+              <a href="/agrisuivi-pro/" className="mt-6 inline-flex items-center justify-center gap-2 rounded-md bg-field px-5 py-4 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-emerald-700">
+                Découvrir AgriSuivi Pro <ArrowRight size={17} />
               </a>
             </div>
             <div className="flex gap-5 overflow-x-auto pb-4 pt-3 snap-x snap-mandatory [scrollbar-width:thin]">
@@ -472,7 +485,7 @@ function Footer() {
           <h3 className="font-black">Nos solutions</h3>
           <div className="mt-3 grid gap-2">
             {applications.map((app) => (
-              <a key={app.id} href="#solutions" className="text-sm font-semibold text-white/72 hover:text-white">{app.name}</a>
+              <a key={app.id} href={appDetailLinks[app.id] || "#solutions"} className="text-sm font-semibold text-white/72 hover:text-white">{app.name}</a>
             ))}
           </div>
         </div>

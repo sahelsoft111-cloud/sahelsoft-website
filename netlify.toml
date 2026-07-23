@@ -6,6 +6,26 @@
   NODE_VERSION = "20"
 
 [[redirects]]
+  from = "/sugucash"
+  to = "/sugucash/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/sugucash/"
+  to = "/sugucash/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/agrisuivi-pro"
+  to = "/agrisuivi-pro/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/agrisuivi-pro/"
+  to = "/agrisuivi-pro/index.html"
+  status = 200
+
+[[redirects]]
   from = "/privacy/agrisuivi-pro"
   to = "/privacy/agrisuivi-pro/index.html"
   status = 200
