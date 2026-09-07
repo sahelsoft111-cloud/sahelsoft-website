@@ -55,3 +55,131 @@ summary::-webkit-details-marker {
   outline: 3px solid #16a34a;
   outline-offset: 3px;
 }
+
+/* --- Scroll reveal --------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  /* An element reveals itself when it carries .is-visible directly
+     (single elements, e.g. the Hero), or when an ancestor .reveal-group
+     carries .is-visible (grids, where children stagger via --reveal-delay). */
+  .reveal.is-visible,
+  .reveal-group.is-visible .reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes floatSlow {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -14px, 0);
+    }
+  }
+
+  .ambient-blob {
+    animation: floatSlow 9s ease-in-out infinite;
+  }
+}
+
+/* --- Spotlight / tilt cards -------------------------------------------- */
+
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.spotlight-card:hover {
+  transform: perspective(900px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateY(-4px);
+}
+
+.spotlight-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  background: radial-gradient(220px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(37, 99, 235, 0.14), transparent 70%);
+  transition: opacity 250ms ease;
+}
+
+.spotlight-card:hover .spotlight-glow {
+  opacity: 1;
+}
+
+.spotlight-card > *:not(.spotlight-glow) {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-card,
+  .spotlight-card:hover {
+    transform: none !important;
+  }
+}
+
+/* No cursor on touch devices, so the glow/tilt has nothing to track. */
+@media (hover: none) {
+  .spotlight-glow {
+    display: none;
+  }
+}
+
+/* --- Bento grid ---------------------------------------------------------
+   grid-auto-flow: dense lets the auto-placement algorithm fill gaps left
+   by the larger (col-span-2 row-span-2) featured tile instead of leaving
+   holes in the layout. */
+
+.bento-grid {
+  grid-auto-flow: dense;
+}
+
+/* --- Hero screenshot crossfade ------------------------------------------ */
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-fade {
+    transition:
+      opacity 320ms ease,
+      transform 320ms ease;
+  }
+
+  .hero-fade.is-leaving {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+/* --- Mobile menu ---------------------------------------------------------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes menuIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .menu-item-in {
+    animation: menuIn 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--menu-delay, 0ms);
+  }
+}

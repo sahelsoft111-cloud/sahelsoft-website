@@ -9,9 +9,9 @@
   "lang": "fr",
   "icons": [
     {
-      "src": "/images/sahelsoft-mark-transparent.png",
-      "sizes": "64x42",
-      "type": "image/png",
+      "src": "/images/icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
       "purpose": "any"
     }
   ]

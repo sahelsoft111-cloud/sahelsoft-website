@@ -1,6 +1,6 @@
 {
   "site": {
-    "url": "https://sahelsoft.netlify.app",
+    "url": "https://sahelsoft.tech",
     "title": "SahelSoft | Solutions numériques professionnelles",
     "description": "SahelSoft développe des logiciels modernes pour les entreprises, commerces, PME, ONG, exploitations agricoles et organisations africaines.",
     "keywords": "SahelSoft, logiciels professionnels, SuguCash, recettes, dépenses, finances personnelles, dettes, paiements, rapports financiers, AgriSuivi Pro, agriculture, élevage, pisciculture"
@@ -64,22 +64,22 @@
     ],
     "screenshots": [
       {
-        "src": "/images/sugucash/sugucash-01-dashboard.png",
+        "src": "/images/sugucash/sugucash-01-dashboard.webp",
         "alt": "Capture SuguCash - tableau de bord",
         "label": "Tableau de bord"
       },
       {
-        "src": "/images/sugucash/sugucash-02-recettes.png",
+        "src": "/images/sugucash/sugucash-02-recettes.webp",
         "alt": "Capture SuguCash - recettes",
         "label": "Recettes"
       },
       {
-        "src": "/images/sugucash/sugucash-03-dettes.png",
+        "src": "/images/sugucash/sugucash-03-dettes.webp",
         "alt": "Capture SuguCash - dettes",
         "label": "Dettes"
       },
       {
-        "src": "/images/sugucash/sugucash-04-parametres.png",
+        "src": "/images/sugucash/sugucash-04-parametres.webp",
         "alt": "Capture SuguCash - paramètres",
         "label": "Paramètres"
       }
@@ -200,17 +200,17 @@
     "description": "Suivez l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances de votre exploitation avec une présentation claire et professionnelle.",
     "screenshots": [
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-01-dashboard.png",
+        "src": "/images/agrisuivi-pro/agrisuivi-01-dashboard.webp",
         "alt": "Capture AgriSuivi Pro - tableau de bord",
         "label": "Tableau de bord"
       },
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-02-agriculture.png",
+        "src": "/images/agrisuivi-pro/agrisuivi-02-agriculture.webp",
         "alt": "Capture AgriSuivi Pro - agriculture",
         "label": "Agriculture"
       },
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-03-elevage.png",
+        "src": "/images/agrisuivi-pro/agrisuivi-03-elevage.webp",
         "alt": "Capture AgriSuivi Pro - élevage",
         "label": "Élevage"
       }
