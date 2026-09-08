@@ -320,7 +320,7 @@ function Applications() {
                   style={{ "--reveal-delay": `${index * 70}ms` }}
                 >
                   <div>
-                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-ocean text-white shadow-soft transition group-hover:scale-110">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-field text-white shadow-soft transition group-hover:scale-110">
                       <Icon size={28} />
                     </div>
                     <h3 className="mt-5 text-2xl font-black text-ink lg:text-3xl">{app.name}</h3>
@@ -389,15 +389,27 @@ function SuguCashGallery() {
               <p className="mt-4 leading-7 text-slate-600">
                 Gérez vos recettes, dépenses, finances personnelles, dettes et paiements simplement, même sans connexion Internet. Toutes les interfaces affichées ici sont de vraies captures Android de SuguCash.
               </p>
-              <button
-                type="button"
-                disabled
-                aria-disabled="true"
-                className="mt-6 inline-flex cursor-not-allowed items-center justify-center gap-3 rounded-md bg-field/50 px-5 py-4 text-sm font-black text-white shadow-soft"
-              >
-                <span className="grid h-7 w-7 place-items-center rounded bg-white/80 text-field">▶</span>
-                Disponible prochainement sur Google Play
-              </button>
+              {playStoreLinks.sugucash ? (
+                <a
+                  href={playStoreLinks.sugucash}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-flex items-center justify-center gap-3 rounded-md bg-field px-5 py-4 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-emerald-700 active:scale-[0.97]"
+                >
+                  <span className="grid h-7 w-7 place-items-center rounded bg-white/80 text-field">▶</span>
+                  Télécharger sur Google Play
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  disabled
+                  aria-disabled="true"
+                  className="mt-6 inline-flex cursor-not-allowed items-center justify-center gap-3 rounded-md bg-field/50 px-5 py-4 text-sm font-black text-white shadow-soft"
+                >
+                  <span className="grid h-7 w-7 place-items-center rounded bg-white/80 text-field">▶</span>
+                  Disponible prochainement sur Google Play
+                </button>
+              )}
               <a href="/sugucash/" className="mt-3 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-5 py-3 text-sm font-black text-ink shadow-soft transition hover:-translate-y-0.5 hover:bg-mist hover:text-ocean">
                 Découvrir SuguCash <ArrowRight size={16} />
               </a>

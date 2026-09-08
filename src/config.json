@@ -20,7 +20,7 @@
     "whatsappNumber": "22376417985"
   },
   "playStoreLinks": {
-    "sugucash": ""
+    "sugucash": "https://play.google.com/store/apps/details?id=com.sahelsoft.sugucash&pcampaignid=web_share"
   },
   "demoLinks": {
     "stockFlowDemoUrl": "",
@@ -48,7 +48,7 @@
     "logo": "/images/sugucash-logo.svg",
     "tag": "Application Android",
     "subtitle": "Gestion simple des recettes, dépenses, dettes et paiements.",
-    "status": "Disponible prochainement sur Google Play",
+    "status": "Disponible sur Google Play",
     "description": "SuguCash est une application SahelSoft de gestion financière simple pour suivre les recettes, les dépenses, les dettes, les paiements, les rapports financiers et l'historique de son activité. Elle fonctionne hors ligne et offre une interface claire, rapide et professionnelle.",
     "features": [
       "Suivi des recettes",
@@ -91,7 +91,7 @@
       "name": "SuguCash",
       "logo": "/images/sugucash-logo.svg",
       "description": "Gestion simple des recettes, dépenses, dettes, paiements et rapports financiers. Fonctionne hors ligne.",
-      "status": "Disponible prochainement sur Google Play"
+      "status": "Disponible sur Google Play"
     },
     {
       "id": "stock-flow",
