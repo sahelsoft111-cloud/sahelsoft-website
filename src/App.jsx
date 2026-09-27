@@ -460,7 +460,7 @@ function ScreenshotViewer({ product }) {
   const tabLabel = (index) => (phones.length > product.screenshots.length ? phones[index] : product.screenshots[index]).label;
 
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full min-w-0 flex-col items-center">
       {isPhone ? (
         <PhoneFrame shot={shot} className="w-[250px] sm:w-[280px]" />
       ) : (
@@ -530,8 +530,8 @@ function Showcase({ activeId, onSelect }) {
           </div>
         </div>
 
-        <div key={product.id} className="showcase-fade grid items-center gap-10 rounded-3xl bg-white p-6 shadow-soft ring-1 ring-slate-200 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
+        <div key={product.id} className="showcase-fade grid grid-cols-1 items-center gap-10 rounded-3xl bg-white p-5 shadow-soft ring-1 ring-slate-200 sm:p-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div className="min-w-0">
             <div className="flex items-center gap-4">
               <ProductIcon product={product} size="lg" />
               <div>
