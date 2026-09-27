@@ -174,7 +174,9 @@ function ScreenshotCard({ shot, featured = false }) {
 }
 
 // Hero: one phone capture per product (the companion phone screen for PC apps).
+// "showInHero": false in config.json keeps a product out of it (e.g. when its phone capture is too small to stay sharp).
 const heroSlides = products.flatMap((product) => {
+  if (product.showInHero === false) return [];
   const shot = product.phoneShots?.[0] || (product.device === "phone" ? product.screenshots[0] : null);
   return shot ? [{ ...shot, label: product.name }] : [];
 });

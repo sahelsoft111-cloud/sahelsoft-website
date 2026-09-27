@@ -272,7 +272,8 @@
           "alt": "Capture Stock Flow Android - tableau de bord",
           "label": "Tableau de bord"
         }
-      ]
+      ],
+      "showInHero": false
     },
     {
       "id": "fisca-plus",
