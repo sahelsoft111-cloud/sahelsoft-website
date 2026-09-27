@@ -4,123 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0F172A" />
-    <meta name="description" content="Centre de confidentialité des applications SahelSoft : SuguCash, AgriSuivi Pro et futures solutions." />
+    <title>Politique de confidentialité | SahelSoft</title>
+    <meta name="description" content="Politique de confidentialité de SahelSoft et de ses applications : SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, Stock Flow et FleetMaster." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://sahelsoft.tech/privacy.html" />
-    <meta property="og:title" content="Politique de confidentialité SahelSoft" />
-    <meta property="og:description" content="Centre de confidentialité des applications SahelSoft, dont SuguCash et AgriSuivi Pro." />
+    <meta property="og:title" content="Politique de confidentialité | SahelSoft" />
+    <meta property="og:description" content="Politique de confidentialité de SahelSoft et de ses applications : SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, Stock Flow et FleetMaster." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sahelsoft.tech/privacy.html" />
     <meta property="og:image" content="https://sahelsoft.tech/images/sahelsoft-og-banner.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Politique de confidentialité SahelSoft" />
-    <meta name="twitter:description" content="Centre de confidentialité des applications SahelSoft." />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Politique de confidentialité | SahelSoft</title>
-    <style>
-      :root { color: #0f172a; font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; background: #f5f8fb; }
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body { margin: 0; }
-      a { color: inherit; }
-      .top { background: #ffffff; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding: 14px 20px; position: sticky; top: 0; z-index: 20; backdrop-filter: blur(16px); }
-      .nav { max-width: 1120px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-      .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; text-decoration: none; }
-      .brand img { height: 54px; max-width: min(280px, 58vw); object-fit: contain; }
-      .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; padding: 12px 16px; font-weight: 900; text-decoration: none; border: 0; transition: transform .18s ease, background .18s ease; }
-      .btn:hover { transform: translateY(-1px); }
-      .btn-primary { background: #16a34a; color: white; }
-      .btn-secondary { background: #2563eb; color: white; }
-      .hero { background: radial-gradient(circle at 14% 12%, rgba(37,99,235,.12), transparent 30%), radial-gradient(circle at 86% 8%, rgba(22,163,74,.13), transparent 28%), #ffffff; border-bottom: 1px solid #e2e8f0; }
-      .hero-inner { max-width: 1120px; margin: 0 auto; padding: 56px 20px 34px; }
-      .eyebrow { color: #2563eb; font-size: .78rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 12px; }
-      h1 { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin: 0; color: #0f172a; letter-spacing: 0; }
-      .lead { max-width: 760px; color: #475569; font-size: 1.08rem; line-height: 1.8; font-weight: 650; margin: 20px 0 0; }
-      .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
-      .grid { display: grid; gap: 18px; }
-      .grid.two { grid-template-columns: 1.1fr .9fr; align-items: start; }
-      .panel { background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 16px 48px rgba(15, 23, 42, 0.10); }
-      .card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; box-shadow: 0 12px 34px rgba(15,23,42,.08); }
-      .card.soft { background: linear-gradient(135deg, #eff6ff, #f0fdf4); }
-      h2 { margin-top: 32px; color: #2563eb; font-size: 1.35rem; }
-      h3 { margin: 0 0 10px; color: #0f172a; }
-      p, li { color: #475569; line-height: 1.8; font-weight: 600; }
-      ul { padding-left: 1.25rem; }
-      .feature-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; list-style: none; }
-      .feature-list li { border-radius: 10px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 14px; line-height: 1.45; }
-      .feature-list li::before { content: '✓'; color: #16a34a; font-weight: 900; margin-right: 8px; }
-      .app-list { display: grid; gap: 10px; margin-top: 18px; }
-      .app-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; border: 1px solid #e2e8f0; background: #fff; border-radius: 10px; padding: 14px 16px; text-decoration: none; font-weight: 900; color: #0f172a; }
-      .app-link.active { border-color: #86efac; background: #f0fdf4; color: #166534; }
-      .badge { display: inline-flex; border-radius: 999px; background: #dcfce7; color: #166534; padding: 6px 10px; font-size: .78rem; font-weight: 900; }
-      .muted { color: #64748b; }
-      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-      .footer { background: #0f172a; color: rgba(255,255,255,.72); }
-      .footer-inner { max-width: 1120px; margin: auto; padding: 28px 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
-      .footer a { color: rgba(255,255,255,.84); font-weight: 800; text-decoration: none; }
-      @media (max-width: 860px) { .grid.two { grid-template-columns: 1fr; } .feature-list { grid-template-columns: 1fr; } }
-      @media (max-width: 640px) { .nav { align-items: flex-start; flex-direction: column; } .brand img { height: 46px; } .actions, .btn { width: 100%; } .hero-inner { padding-top: 38px; } }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/legal/legal.css" />
   </head>
   <body>
     <header class="top">
-      <nav class="nav" aria-label="Navigation principale">
-        <a class="brand" href="/"><img src="/images/sahelsoft-logo-transparent.png" alt="Logo officiel SahelSoft" /></a>
-        <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">Nous contacter</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Confidentialité</p>
-        <h1>Centre de confidentialité SahelSoft</h1>
-        <p class="lead">Retrouvez les politiques de confidentialité des applications SahelSoft. Chaque application dispose d'une page dédiée afin de respecter les exigences Google Play et d'offrir une information claire aux utilisateurs.</p>
+      <div class="top-inner">
+        <a class="brand" href="/" aria-label="Accueil SahelSoft"><img src="/images/sahelsoft-logo.webp" width="240" height="64" alt="SahelSoft" /></a>
+        <nav class="top-nav" aria-label="Pages légales"><a href="/">Accueil</a><a href="/privacy.html" aria-current="page">Confidentialité</a><a href="/delete-account.html">Suppression de compte</a><a href="/terms.html">Conditions d'utilisation</a></nav>
       </div>
-    </section>
-    <main class="wrap grid two">
-      <section class="panel">
-        <h2>Applications disponibles</h2>
-        <div class="app-list" aria-label="Pages de confidentialité des applications SahelSoft">
-          <a class="app-link" href="/privacy.html#sugucash"><span>Politique de confidentialité SuguCash</span><span class="badge">Disponible</span></a>
-          <a class="app-link active" href="/privacy/agrisuivi-pro/"><span>Politique de confidentialité AgriSuivi Pro</span><span class="badge">Disponible</span></a>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Centre de confidentialité</p>
+          <h1>Politique de confidentialité</h1>
+          <p class="lead">Ce document explique quelles données les applications et le site de SahelSoft traitent, pourquoi, avec qui elles peuvent être partagées et comment vous gardez le contrôle sur elles.</p>
+          <div class="meta">
+            <span class="chip">Dernière mise à jour : 27 septembre 2026</span>
+            <span class="chip">S'applique à toutes les applications SahelSoft</span>
+          </div>
         </div>
-        <h2>Applications prévues</h2>
-        <div class="app-list">
-          <span class="app-link"><span>Stock Flow</span><span class="muted">à venir</span></span>
-          <span class="app-link"><span>FleetMaster</span><span class="muted">à venir</span></span>
-          <span class="app-link"><span>EduFlow</span><span class="muted">à venir</span></span>
-          <span class="app-link"><span>Mali Paie Pro</span><span class="muted">à venir</span></span>
-          <span class="app-link"><span>Mobility Manager</span><span class="muted">à venir</span></span>
-        </div>
-      </section>
-      <aside class="card soft">
-        <h3>Contact confidentialité</h3>
-        <p>Pour toute question liée à la confidentialité ou aux données des applications SahelSoft :</p>
-        <p><a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></p>
-        <div class="actions">
-          <a class="btn btn-secondary" href="/">Retour à l'accueil</a>
-          <a class="btn btn-primary" href="/privacy/agrisuivi-pro/">AgriSuivi Pro</a>
-        </div>
-      </aside>
-      <section id="sugucash" class="panel">
-        <h2>Politique de confidentialité SuguCash</h2>
-        <p>SuguCash fonctionne actuellement avec un stockage local sur l'appareil de l'utilisateur. Les informations liées aux recettes, dépenses, finances personnelles, dettes, paiements, historique, rapports financiers et paramètres restent principalement sur le téléphone.</p>
-        <p>SahelSoft ne vend pas les données personnelles des utilisateurs et ne les exploite pas à des fins commerciales.</p>
-        <div class="actions">
-          <a class="btn btn-secondary" href="/">Retour à l'accueil</a>
-          <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">Nous contacter</a>
-        </div>
-      </section>
+      </div>
+      <div class="layout">
+        <nav class="toc" aria-label="Sommaire"><p>Sommaire</p><ol><li><a href="#editeur">Qui sommes-nous</a></li><li><a href="#champ">Champ d'application</a></li><li><a href="#principes">Nos principes</a></li><li><a href="#donnees">Données traitées et finalités</a></li><li><a href="#sugucash">SuguCash</a></li><li><a href="#agrisuivi-pro">AgriSuivi Pro</a></li><li><a href="#applications-web">Applications web : Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</a></li><li><a href="#logiciels-windows">Logiciels Windows : Stock Flow, FleetMaster</a></li><li><a href="#site-web">Site sahelsoft.tech</a></li><li><a href="#partage">Partage avec des tiers</a></li><li><a href="#conservation">Durée de conservation</a></li><li><a href="#droits">Vos droits</a></li><li><a href="#securite">Sécurité</a></li><li><a href="#enfants">Protection des mineurs</a></li><li><a href="#modifications">Modifications</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+        <article class="doc">
+<section class="section" id="editeur"><h2><span class="num">1</span>Qui sommes-nous</h2><p><strong>SahelSoft</strong> est un éditeur de logiciels de gestion basé à Bamako (Mali). SahelSoft est responsable du traitement des données personnelles décrit dans ce document, pour ce qui concerne ses propres traitements.</p>
+<div class="table-wrap"><table><tbody>
+<tr><th>Éditeur</th><td>SahelSoft</td></tr>
+<tr><th>Adresse</th><td>Bamako, Mali</td></tr>
+<tr><th>E-mail</th><td><a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></td></tr>
+<tr><th>WhatsApp</th><td><a href="https://wa.me/22363035643">+223 63 03 56 43</a></td></tr>
+<tr><th>Site</th><td><a href="https://sahelsoft.tech">sahelsoft.tech</a></td></tr>
+</tbody></table></div></section>
+<section class="section" id="champ"><h2><span class="num">2</span>Champ d'application</h2><p>Cette politique s'applique au site <a href="https://sahelsoft.tech">sahelsoft.tech</a> et aux applications éditées par SahelSoft. Certaines applications disposent en plus d'une politique dédiée, qui prévaut pour les points qui leur sont propres.</p>
+<div class="cards">
+<a class="card" href="#sugucash"><strong>SuguCash</strong><span>Android · politique détaillée ci-dessous</span></a>
+<a class="card" href="/privacy/agrisuivi-pro/"><strong>AgriSuivi Pro</strong><span>Android et Windows · politique dédiée</span></a>
+<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</strong><span>Applications web · section dédiée</span></a>
+<a class="card" href="#logiciels-windows"><strong>Stock Flow, FleetMaster</strong><span>Logiciels Windows · section dédiée</span></a>
+</div></section>
+<section class="section" id="principes"><h2><span class="num">3</span>Nos principes</h2><ul>
+<li><strong>Vos données vous appartiennent.</strong> Les informations que vous saisissez (ventes, dépenses, employés, immobilisations, exploitation…) restent votre propriété.</li>
+<li><strong>Stockage local par défaut.</strong> Nos applications enregistrent vos données sur votre appareil. Elles fonctionnent hors ligne et n'envoient pas vos données de gestion à SahelSoft.</li>
+<li><strong>Aucune vente de données.</strong> SahelSoft ne vend, ne loue et n'échange pas vos données personnelles.</li>
+<li><strong>Minimum nécessaire.</strong> Les rares données qui quittent votre appareil (activation de licence, sauvegarde en ligne choisie par vous, diagnostic photo) servent uniquement à la fonctionnalité demandée.</li>
+</ul></section>
+<section class="section" id="donnees"><h2><span class="num">4</span>Données traitées et finalités</h2><div class="table-wrap"><table>
+<thead><tr><th>Données</th><th>Où elles se trouvent</th><th>Finalité</th></tr></thead>
+<tbody>
+<tr><td>Données de gestion saisies dans les applications (ventes, dépenses, dettes, stocks, bulletins, immobilisations, exploitation…)</td><td>Sur votre appareil uniquement</td><td>Faire fonctionner l'application</td></tr>
+<tr><td>Comptes utilisateurs locaux (nom, identifiant, mot de passe protégé)</td><td>Sur votre appareil uniquement</td><td>Sécuriser l'accès à l'application</td></tr>
+<tr><td>Clé de licence et identifiant technique de l'appareil</td><td>Transmis lors de l'activation (applications web)</td><td>Vérifier la validité de la licence et le nombre d'appareils</td></tr>
+<tr><td>Nom, e-mail et informations de paiement lors d'un achat</td><td>Chez la plateforme de vente (Chariow) ou Google Play</td><td>Traiter la commande et délivrer la licence</td></tr>
+<tr><td>Nom et adresse e-mail du compte Google (si vous choisissez « Se connecter avec Google »)</td><td>Sur votre appareil</td><td>Créer ou ouvrir votre compte dans l'application</td></tr>
+<tr><td>Fichier de sauvegarde (si vous activez la sauvegarde Google Drive)</td><td>Dans votre propre Google Drive</td><td>Sauvegarder et restaurer vos données</td></tr>
+<tr><td>Messages et coordonnées envoyés au support</td><td>Messagerie de SahelSoft (e-mail, WhatsApp)</td><td>Répondre à vos demandes</td></tr>
+</tbody></table></div></section>
+<section class="section" id="sugucash"><h2><span class="num">5</span>SuguCash</h2><p>SuguCash est une application Android de gestion des recettes, dépenses, dettes et paiements.</p>
+<h3>Données enregistrées sur votre téléphone</h3>
+<p>Recettes, dépenses, dettes clients, paiements, historique, rapports, paramètres et comptes locaux. Ces données restent sur votre appareil et SahelSoft n'y a pas accès.</p>
+<h3>Services utilisés par l'application</h3>
+<ul>
+<li><strong>Publicité (Google AdMob).</strong> SuguCash peut afficher des annonces fournies par Google AdMob. Pour cela, Google peut collecter l'identifiant publicitaire de l'appareil, des informations techniques (modèle, système, adresse IP) et des données d'interaction avec les annonces, conformément à ses propres règles de confidentialité. Vous pouvez réinitialiser ou supprimer l'identifiant publicitaire dans les paramètres Android (Google › Annonces).</li>
+<li><strong>Connexion avec Google (facultative).</strong> Si vous la choisissez, l'application reçoit votre nom et votre adresse e-mail pour créer ou ouvrir votre compte.</li>
+<li><strong>Sauvegarde Google Drive (facultative, Premium).</strong> Si vous l'activez, une sauvegarde chiffrée de vos données est enregistrée dans votre propre Google Drive. L'application n'a accès qu'aux fichiers qu'elle a créés.</li>
+<li><strong>Google Play (achats et intégrité).</strong> Les abonnements et achats sont traités par Google Play Billing. Google Play Integrity peut être utilisé pour vérifier que l'application est authentique.</li>
+</ul>
+<p>La suppression de vos données SuguCash est expliquée sur la page <a href="/delete-account.html#sugucash">Suppression de compte SuguCash</a>.</p></section>
+<section class="section" id="agrisuivi-pro"><h2><span class="num">6</span>AgriSuivi Pro</h2><p>AgriSuivi Pro dispose d'une politique de confidentialité dédiée, qui détaille notamment la connexion Google, la sauvegarde Google Drive et le diagnostic photo par intelligence artificielle.</p>
+<div class="actions"><a class="btn btn-primary" href="/privacy/agrisuivi-pro/">Lire la politique AgriSuivi Pro</a></div></section>
+<section class="section" id="applications-web"><h2><span class="num">7</span>Applications web : Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</h2><p>Ces applications s'utilisent dans le navigateur, sur ordinateur comme sur téléphone, et peuvent être installées comme une application.</p>
+<ul>
+<li><strong>Données enregistrées dans votre navigateur</strong> (stockage local) : devis et factures, profil fiscal, employés et bulletins, immobilisations, ventes et stock selon l'application. Elles ne sont pas envoyées à SahelSoft.</li>
+<li><strong>Activation de la licence</strong> : lors de l'activation puis lors de vérifications périodiques, la clé de licence et un identifiant technique généré aléatoirement pour l'appareil sont transmis à notre serveur (hébergé par Netlify), qui interroge la plateforme de vente Chariow. Aucune donnée de gestion n'est transmise.</li>
+<li><strong>Achat</strong> : le paiement et vos coordonnées d'achat sont traités par Chariow, selon ses propres conditions.</li>
+<li><strong>Sauvegarde</strong> : l'export de sauvegarde crée un fichier sur votre appareil ; vous choisissez où le conserver.</li>
+</ul>
+<div class="note amber">Vider les données du navigateur ou désinstaller l'application supprime définitivement les données non sauvegardées. Pensez à exporter une sauvegarde régulièrement.</div></section>
+<section class="section" id="logiciels-windows"><h2><span class="num">8</span>Logiciels Windows : Stock Flow, FleetMaster</h2><p>Ces logiciels s'installent sur votre ordinateur. Les données (produits, stocks, factures, véhicules, entretiens…) et la licence sont enregistrées localement sur l'ordinateur et ne sont pas transmises à SahelSoft. Leur version Android, lorsqu'elle existe, fonctionne selon les mêmes principes.</p></section>
+<section class="section" id="site-web"><h2><span class="num">9</span>Site sahelsoft.tech</h2><p>Le site ne dépose pas de cookie publicitaire et n'utilise pas d'outil de mesure d'audience. Il est hébergé par Netlify, qui enregistre des journaux techniques (adresse IP, navigateur, pages demandées) pour assurer la sécurité et le bon fonctionnement du service. Les polices d'écriture sont chargées depuis Google Fonts. Les boutons « WhatsApp » ouvrent l'application WhatsApp, soumise à ses propres conditions.</p></section>
+<section class="section" id="partage"><h2><span class="num">10</span>Partage avec des tiers</h2><p>SahelSoft ne partage vos données qu'avec les prestataires nécessaires au fonctionnement des services, et uniquement pour les fonctionnalités que vous utilisez :</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Prestataire</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td>Google (Play, AdMob, connexion Google, Drive, Gemini)</td><td>Distribution et paiement Android, publicité (SuguCash), connexion, sauvegarde, diagnostic photo (AgriSuivi Pro)</td></tr>
+<tr><td>Supabase</td><td>Hébergement du service de diagnostic photo d'AgriSuivi Pro</td></tr>
+<tr><td>Chariow</td><td>Vente en ligne et gestion des licences des applications web</td></tr>
+<tr><td>Netlify</td><td>Hébergement du site et des applications web</td></tr>
+</tbody></table></div>
+<p>Vos données peuvent également être communiquées si la loi l'exige, sur demande d'une autorité compétente. Certains de ces prestataires peuvent traiter des données hors du Mali ; ils appliquent leurs propres garanties de sécurité et de confidentialité.</p></section>
+<section class="section" id="conservation"><h2><span class="num">11</span>Durée de conservation</h2><ul>
+<li><strong>Données locales</strong> : conservées sur votre appareil jusqu'à ce que vous les supprimiez ou désinstalliez l'application.</li>
+<li><strong>Sauvegardes Google Drive</strong> : conservées dans votre Drive jusqu'à ce que vous les supprimiez.</li>
+<li><strong>Données de licence</strong> : conservées pendant la durée de la licence, puis le temps nécessaire aux obligations comptables.</li>
+<li><strong>Échanges avec le support</strong> : conservés le temps de traiter la demande, puis au maximum 3 ans après le dernier contact.</li>
+</ul></section>
+<section class="section" id="droits"><h2><span class="num">12</span>Vos droits</h2><p>Conformément à la loi malienne n° 2013-015 du 21 mai 2013 relative à la protection des données à caractère personnel, vous disposez des droits suivants sur les données que SahelSoft traite à votre sujet :</p>
+<ul>
+<li><strong>Droit d'accès</strong> : savoir quelles données nous détenons et en obtenir une copie ;</li>
+<li><strong>Droit de rectification</strong> : faire corriger des données inexactes ;</li>
+<li><strong>Droit de suppression</strong> : demander l'effacement de vos données ;</li>
+<li><strong>Droit d'opposition</strong> : vous opposer à un traitement, pour un motif légitime ;</li>
+<li><strong>Retrait du consentement</strong> : à tout moment, pour les traitements fondés sur votre accord (par exemple la connexion Google ou la sauvegarde Google Drive).</li>
+</ul>
+<p>Pour exercer ces droits, écrivez à <a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a> en précisant l'application concernée. Nous répondons dans un délai maximal de <strong>30 jours</strong>. Une preuve d'identité peut être demandée si elle est nécessaire pour protéger vos données.</p>
+<p>Vous pouvez également adresser une réclamation à l'Autorité de Protection des Données à caractère Personnel (APDP) du Mali.</p>
+<div class="note">La plupart des données de nos applications sont enregistrées <strong>uniquement sur votre appareil</strong> : SahelSoft n'y a pas accès. Vous pouvez les consulter, les modifier et les supprimer directement dans l'application.</div></section>
+<section class="section" id="securite"><h2><span class="num">13</span>Sécurité</h2><p>SahelSoft applique des mesures adaptées pour protéger les données :</p>
+<ul>
+<li>stockage local sur l'appareil par défaut, sans envoi de vos données métier vers nos serveurs ;</li>
+<li>connexions chiffrées (HTTPS) pour tous les échanges réseau (activation de licence, sauvegarde Google Drive, diagnostic IA) ;</li>
+<li>clés techniques (clés d'API, clés secrètes) conservées uniquement côté serveur, jamais dans les applications ;</li>
+<li>accès aux services Google limité au strict nécessaire (par exemple, accès Google Drive restreint aux seuls fichiers créés par l'application).</li>
+</ul>
+<p>La sécurité de votre appareil (code de verrouillage, mises à jour du système) et la réalisation de sauvegardes régulières restent sous votre responsabilité. Si vous perdez ou changez d'appareil sans sauvegarde, les données locales ne peuvent pas être récupérées par SahelSoft.</p></section>
+<section class="section" id="enfants"><h2><span class="num">14</span>Protection des mineurs</h2><p>Les applications SahelSoft sont des outils de gestion destinés aux professionnels, aux commerçants et aux exploitants. Elles ne s'adressent pas aux enfants de moins de 13 ans et SahelSoft ne collecte pas sciemment de données les concernant.</p></section>
+<section class="section" id="modifications"><h2><span class="num">15</span>Modifications</h2><p>SahelSoft peut mettre à jour ce document, notamment lors de l'ajout d'une fonctionnalité. La date de dernière mise à jour figure en haut de la page. En cas de changement important, une information sera donnée dans l'application ou sur ce site.</p></section>
+<section class="section" id="contact"><h2><span class="num">16</span>Contact</h2><p>Pour toute question sur ce document ou sur vos données :</p>
+<ul><li>E-mail : <a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></li><li>WhatsApp : <a href="https://wa.me/22363035643">+223 63 03 56 43</a></li><li>Adresse : SahelSoft, Bamako, Mali</li></ul></section>
+        </article>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-inner">
-        <span>© 2026 SahelSoft. Tous droits réservés.</span>
-        <span><a href="/privacy.html">Centre confidentialité</a> · <a href="/delete-account.html">Centre suppression de compte</a> · <a href="/terms.html">Conditions d'utilisation</a></span>
+        <span>© 2026 SahelSoft · Bamako, Mali · sahelsoft111@gmail.com</span>
+        <span><a href="/privacy.html">Confidentialité</a><a href="/delete-account.html">Suppression de compte</a><a href="/terms.html">Conditions d'utilisation</a></span>
       </div>
     </footer>
   </body>

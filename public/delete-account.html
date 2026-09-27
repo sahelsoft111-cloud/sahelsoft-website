@@ -4,123 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0F172A" />
-    <meta name="description" content="Centre de suppression de compte des applications SahelSoft : SuguCash et AgriSuivi Pro." />
+    <title>Suppression de compte et de données | SahelSoft</title>
+    <meta name="description" content="Comment supprimer votre compte et vos données dans les applications SahelSoft : SuguCash, AgriSuivi Pro et applications web." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://sahelsoft.tech/delete-account.html" />
-    <meta property="og:title" content="Suppression de compte SahelSoft" />
-    <meta property="og:description" content="Choisissez l'application SahelSoft concernée pour consulter la procédure de suppression de compte et de données." />
+    <meta property="og:title" content="Suppression de compte et de données | SahelSoft" />
+    <meta property="og:description" content="Comment supprimer votre compte et vos données dans les applications SahelSoft : SuguCash, AgriSuivi Pro et applications web." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sahelsoft.tech/delete-account.html" />
     <meta property="og:image" content="https://sahelsoft.tech/images/sahelsoft-og-banner.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Suppression de compte SahelSoft" />
-    <meta name="twitter:description" content="Centre de suppression de compte pour SuguCash et AgriSuivi Pro." />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Suppression de compte | SahelSoft</title>
-    <style>
-      :root { color: #0f172a; font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Arial, sans-serif; background: #f5f8fb; }
-      * { box-sizing: border-box; }
-      html { scroll-behavior: smooth; }
-      body { margin: 0; }
-      a { color: inherit; }
-      .top { background: #ffffff; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding: 14px 20px; position: sticky; top: 0; z-index: 20; }
-      .nav { max-width: 1120px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-      .brand { display: flex; align-items: center; gap: 12px; font-weight: 900; text-decoration: none; }
-      .brand img { height: 54px; max-width: min(280px, 58vw); object-fit: contain; }
-      .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; padding: 12px 16px; font-weight: 900; text-decoration: none; border: 0; transition: transform .18s ease, background .18s ease; }
-      .btn:hover { transform: translateY(-1px); }
-      .btn-primary { background: #16a34a; color: white; }
-      .btn-secondary { background: #2563eb; color: white; }
-      .hero { background: radial-gradient(circle at 14% 12%, rgba(37,99,235,.12), transparent 30%), radial-gradient(circle at 86% 8%, rgba(22,163,74,.13), transparent 28%), #ffffff; border-bottom: 1px solid #e2e8f0; }
-      .hero-inner { max-width: 1120px; margin: 0 auto; padding: 56px 20px 34px; }
-      .eyebrow { color: #2563eb; font-size: .78rem; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 12px; }
-      h1 { font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.05; margin: 0; color: #0f172a; letter-spacing: 0; }
-      h2 { margin: 0 0 14px; color: #2563eb; font-size: 1.35rem; }
-      h3 { margin: 0 0 10px; color: #0f172a; }
-      p, li { color: #475569; line-height: 1.8; font-weight: 600; }
-      ul { padding-left: 1.25rem; }
-      .lead { max-width: 760px; color: #475569; font-size: 1.08rem; line-height: 1.8; font-weight: 650; margin: 20px 0 0; }
-      .wrap { max-width: 1120px; margin: 0 auto; padding: 32px 20px 56px; }
-      .grid { display: grid; gap: 18px; }
-      .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .panel, .card { background: white; border: 1px solid #e2e8f0; border-radius: 14px; padding: clamp(22px, 4vw, 34px); box-shadow: 0 16px 48px rgba(15, 23, 42, 0.10); }
-      .card { display: flex; flex-direction: column; gap: 12px; min-height: 100%; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
-      .card:hover { transform: translateY(-2px); border-color: #93c5fd; box-shadow: 0 20px 56px rgba(15, 23, 42, 0.14); }
-      .card.green:hover { border-color: #86efac; }
-      .badge { display: inline-flex; width: fit-content; border-radius: 999px; background: #dcfce7; color: #166534; padding: 6px 10px; font-size: .78rem; font-weight: 900; }
-      .notice { margin: 24px 0; border-radius: 12px; background: #eff6ff; border: 1px solid #bfdbfe; padding: 18px; }
-      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
-      .details { margin-top: 22px; }
-      .footer { background: #0f172a; color: rgba(255,255,255,.72); }
-      .footer-inner { max-width: 1120px; margin: auto; padding: 28px 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
-      .footer a { color: rgba(255,255,255,.84); font-weight: 800; text-decoration: none; }
-      @media (max-width: 760px) { .grid.two { grid-template-columns: 1fr; } }
-      @media (max-width: 640px) { .nav { align-items: flex-start; flex-direction: column; } .brand img { height: 46px; } .actions, .btn { width: 100%; } .hero-inner { padding-top: 38px; } }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/legal/legal.css" />
   </head>
   <body>
     <header class="top">
-      <nav class="nav" aria-label="Navigation principale">
-        <a class="brand" href="/"><img src="/images/sahelsoft-logo-transparent.png" alt="Logo officiel SahelSoft" /></a>
-        <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com">Nous contacter</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Suppression de compte</p>
-        <h1>Centre de suppression de compte SahelSoft</h1>
-        <p class="lead">Choisissez l'application concernée pour consulter la procédure officielle de suppression de compte et de données utilisateur.</p>
+      <div class="top-inner">
+        <a class="brand" href="/" aria-label="Accueil SahelSoft"><img src="/images/sahelsoft-logo.webp" width="240" height="64" alt="SahelSoft" /></a>
+        <nav class="top-nav" aria-label="Pages légales"><a href="/">Accueil</a><a href="/privacy.html">Confidentialité</a><a href="/delete-account.html" aria-current="page">Suppression de compte</a><a href="/terms.html">Conditions d'utilisation</a></nav>
       </div>
-    </section>
-    <main class="wrap">
-      <section class="grid two" aria-label="Choix de l'application">
-        <a class="card" href="/delete-account.html#sugucash">
-          <span class="badge">SuguCash</span>
-          <h2>Suppression du compte SuguCash</h2>
-          <p>Gestion des recettes, dépenses, finances personnelles, dettes, paiements, historique et paramètres stockés localement.</p>
-        </a>
-        <a class="card green" href="/delete-account/agrisuivi-pro/">
-          <span class="badge">AgriSuivi Pro</span>
-          <h2>Suppression du compte AgriSuivi Pro</h2>
-          <p>Gestion d'exploitation agricole, élevage, pisciculture, données sanitaires, dépenses, recettes et sauvegardes.</p>
-        </a>
-      </section>
-      <section id="sugucash" class="panel details">
-        <p class="eyebrow">Google Play Console</p>
-        <h2>Suppression de compte SuguCash</h2>
-        <p>SuguCash fonctionne actuellement avec un stockage local sur votre appareil.</p>
-        <p>Lorsque vous désinstallez l'application, toutes les données enregistrées localement sont automatiquement supprimées de votre téléphone.</p>
-        <h3>Données concernées</h3>
-        <ul>
-          <li>Compte utilisateur</li>
-          <li>Ventes</li>
-          <li>Dépenses</li>
-          <li>Dettes clients</li>
-          <li>Paiements</li>
-          <li>Historique</li>
-          <li>Paramètres</li>
-        </ul>
-        <div class="notice">
-          <p>Pour obtenir une assistance concernant la suppression de vos données ou une future version utilisant une synchronisation en ligne, contactez :</p>
-          <p><a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></p>
+    </header>
+    <main>
+      <div class="hero">
+        <div class="hero-inner">
+          <p class="eyebrow">Centre de suppression de compte</p>
+          <h1>Suppression de compte et de données</h1>
+          <p class="lead">Cette page explique comment supprimer votre compte et vos données dans chaque application SahelSoft, quelles données sont concernées et dans quels délais.</p>
+          <div class="meta">
+            <span class="chip">Dernière mise à jour : 27 septembre 2026</span>
+            <span class="chip">Délai de traitement : 30 jours maximum</span>
+          </div>
         </div>
-        <p>Les demandes seront traitées dans un délai maximal de 30 jours.</p>
-        <div class="actions">
-          <a class="btn btn-secondary" href="/">Retour à l'accueil</a>
-          <a class="btn btn-primary" href="mailto:sahelsoft111@gmail.com?subject=Assistance%20suppression%20de%20donn%C3%A9es%20SuguCash">Nous contacter</a>
-        </div>
-      </section>
+      </div>
+      <div class="layout">
+        <nav class="toc" aria-label="Sommaire"><p>Sommaire</p><ol><li><a href="#choisir">Choisissez votre application</a></li><li><a href="#sugucash">SuguCash</a></li><li><a href="#agrisuivi-pro">AgriSuivi Pro</a></li><li><a href="#applications-web">Applications web</a></li><li><a href="#logiciels-windows">Logiciels Windows</a></li><li><a href="#delais">Délais et confirmation</a></li><li><a href="#contact">Contact</a></li></ol></nav>
+        <article class="doc">
+<section class="section" id="choisir"><h2><span class="num">1</span>Choisissez votre application</h2><div class="cards">
+<a class="card" href="#sugucash"><strong>SuguCash</strong><span>Procédure détaillée ci-dessous</span></a>
+<a class="card" href="/delete-account/agrisuivi-pro/"><strong>AgriSuivi Pro</strong><span>Page dédiée</span></a>
+<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</strong><span>Applications web</span></a>
+<a class="card" href="#logiciels-windows"><strong>Stock Flow, FleetMaster</strong><span>Logiciels Windows</span></a>
+</div></section>
+<section class="section" id="sugucash"><h2><span class="num">2</span>SuguCash</h2><p>Application SuguCash, éditée par <strong>SahelSoft</strong>.</p>
+<h3>Supprimer vos données vous-même</h3>
+<ol class="steps">
+<li><strong>Données sur le téléphone</strong> : désinstallez SuguCash, ou effacez ses données dans Android (Paramètres › Applications › SuguCash › Stockage › Effacer les données). Votre compte local et toutes vos données sont alors supprimés définitivement.</li>
+<li><strong>Sauvegarde Google Drive</strong> (si vous l'aviez activée) : supprimez le fichier de sauvegarde SuguCash de votre Google Drive.</li>
+<li><strong>Accès Google</strong> (si vous vous étiez connecté avec Google) : retirez l'accès de SuguCash sur <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.</li>
+</ol>
+<h3>Demander la suppression à SahelSoft</h3>
+<p>Pour toute demande, ou si vous avez besoin d'aide, écrivez à <a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a> :</p>
+<div class="template">Objet : Demande de suppression de données — SuguCash
+
+Bonjour,
+Je souhaite la suppression de mes données liées à SuguCash.
+Adresse e-mail utilisée dans l'application (si applicable) : …
+Clé de licence (applications web, si applicable) : …
+Merci.</div>
+<h3>Données supprimées et conservées</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Données</th><th>Traitement</th></tr></thead>
+<tbody>
+<tr><td>Compte local, recettes, dépenses, dettes, paiements, historique, paramètres</td><td>Supprimés définitivement (ils ne sont stockés que sur votre téléphone)</td></tr>
+<tr><td>Sauvegarde Google Drive</td><td>Supprimée lorsque vous effacez le fichier de votre Drive</td></tr>
+<tr><td>Historique d'achat et d'abonnement Google Play</td><td>Conservé par Google selon ses propres règles et obligations légales</td></tr>
+<tr><td>Échanges avec le support</td><td>Supprimés sur demande, sauf obligation légale de conservation</td></tr>
+</tbody></table></div></section>
+<section class="section" id="agrisuivi-pro"><h2><span class="num">3</span>AgriSuivi Pro</h2><p>La procédure complète de suppression pour AgriSuivi Pro (Android et Windows) est disponible sur sa page dédiée.</p>
+<div class="actions"><a class="btn btn-primary" href="/delete-account/agrisuivi-pro/">Supprimer mon compte AgriSuivi Pro</a></div></section>
+<section class="section" id="applications-web"><h2><span class="num">4</span>Applications web</h2><p>Devisio, Fisca+, SahelPaie, SahelImmo et Sahel Caisse enregistrent vos données dans votre navigateur.</p>
+<ol class="steps">
+<li>Utilisez l'option de suppression de l'application (par exemple « Tout effacer » ou « Données » dans les paramètres), ou effacez les données du site dans les réglages de votre navigateur.</li>
+<li>Si l'application est installée sur votre appareil, désinstallez-la.</li>
+<li>Pour supprimer les informations liées à votre achat ou à votre licence, écrivez à <a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a> en indiquant votre clé de licence.</li>
+</ol></section>
+<section class="section" id="logiciels-windows"><h2><span class="num">5</span>Logiciels Windows</h2><p>Pour Stock Flow et FleetMaster, les données sont enregistrées sur votre ordinateur. Désinstallez le logiciel puis supprimez son dossier de données pour tout effacer. SahelSoft ne détient pas de copie de ces données.</p></section>
+<section class="section" id="delais"><h2><span class="num">6</span>Délais et confirmation</h2><p>Les demandes envoyées par e-mail sont traitées dans un délai maximal de <strong>30 jours</strong>. Vous recevez une confirmation une fois la suppression effectuée.</p></section>
+<section class="section" id="contact"><h2><span class="num">7</span>Contact</h2><p>Pour toute question sur ce document ou sur vos données :</p>
+<ul><li>E-mail : <a href="mailto:sahelsoft111@gmail.com">sahelsoft111@gmail.com</a></li><li>WhatsApp : <a href="https://wa.me/22363035643">+223 63 03 56 43</a></li><li>Adresse : SahelSoft, Bamako, Mali</li></ul></section>
+        </article>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-inner">
-        <span>© 2026 SahelSoft. Tous droits réservés.</span>
-        <span><a href="/privacy.html">Centre confidentialité</a> · <a href="/delete-account.html">Centre suppression de compte</a> · <a href="/terms.html">Conditions d'utilisation</a></span>
+        <span>© 2026 SahelSoft · Bamako, Mali · sahelsoft111@gmail.com</span>
+        <span><a href="/privacy.html">Confidentialité</a><a href="/delete-account.html">Suppression de compte</a><a href="/terms.html">Conditions d'utilisation</a></span>
       </div>
     </footer>
   </body>

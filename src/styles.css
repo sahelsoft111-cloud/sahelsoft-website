@@ -4,7 +4,7 @@
 
 :root {
   color: #0f172a;
-  background: #ffffff;
+  background: #f4f7fc;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +17,61 @@ html {
 
 body {
   margin: 0;
+  /* Transparent so the fixed background layers below (z-index: -1) stay visible. */
+  background: transparent;
+}
+
+/* --- Site background ------------------------------------------------------
+   Fixed layer behind every section: soft brand-coloured glows plus a faint
+   dot grid that fades out towards the bottom. Sections are transparent so it
+   shows through; white cards stand out on top of it. */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background:
+    radial-gradient(760px 560px at -5% -5%, rgba(37, 99, 235, 0.32), transparent 62%),
+    radial-gradient(700px 520px at 105% 10%, rgba(22, 163, 74, 0.26), transparent 62%),
+    radial-gradient(820px 620px at 75% 105%, rgba(14, 165, 233, 0.26), transparent 62%),
+    radial-gradient(640px 480px at 0% 100%, rgba(99, 102, 241, 0.2), transparent 62%),
+    linear-gradient(180deg, #eef3fb 0%, #f4f7fc 50%, #eef6f3 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background:
+    radial-gradient(900px 600px at 0% 0%, rgba(37, 99, 235, 0.16), transparent 60%),
+    radial-gradient(800px 560px at 100% 8%, rgba(22, 163, 74, 0.12), transparent 60%),
+    radial-gradient(900px 700px at 70% 100%, rgba(14, 165, 233, 0.12), transparent 60%),
+    radial-gradient(700px 500px at 5% 95%, rgba(99, 102, 241, 0.08), transparent 60%);
+}
+
+body::after {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.22) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.25) 100%);
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+/* A lightly frosted band to separate alternating sections. */
+.section-band {
+  background: rgba(255, 255, 255, 0.45);
+  border-block: 1px solid rgba(226, 232, 240, 0.8);
+  backdrop-filter: blur(2px);
 }
 
 button,
@@ -140,13 +195,25 @@ summary::-webkit-details-marker {
   }
 }
 
-/* --- Bento grid ---------------------------------------------------------
-   grid-auto-flow: dense lets the auto-placement algorithm fill gaps left
-   by the larger (col-span-2 row-span-2) featured tile instead of leaving
-   holes in the layout. */
+/* --- Showcase ------------------------------------------------------------
+   Elements carrying .showcase-fade are re-mounted (React key) when the
+   visitor switches product or screen, so the animation replays each time. */
 
-.bento-grid {
-  grid-auto-flow: dense;
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes showcaseIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .showcase-fade {
+    animation: showcaseIn 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
 }
 
 /* --- Hero screenshot crossfade ------------------------------------------ */

@@ -3,216 +3,623 @@
     "url": "https://sahelsoft.tech",
     "title": "SahelSoft | Solutions numériques professionnelles",
     "description": "SahelSoft développe des logiciels modernes pour les entreprises, commerces, PME, ONG, exploitations agricoles et organisations africaines.",
-    "keywords": "SahelSoft, logiciels professionnels, SuguCash, recettes, dépenses, finances personnelles, dettes, paiements, rapports financiers, AgriSuivi Pro, agriculture, élevage, pisciculture"
+    "keywords": "SahelSoft, logiciels professionnels, SuguCash, Devisio, Stock Flow, Fisca+, SahelPaie, SahelImmo, AgriSuivi Pro, FleetMaster, paie Mali, fiscalité Mali, SYSCOHADA, devis factures"
   },
   "brand": {
     "name": "SahelSoft",
     "slogan": "Des solutions numériques pour faire grandir votre activité.",
     "valueProposition": "Des solutions numériques pour faire grandir votre activité.",
     "description": "Éditeur de logiciels modernes pour les entreprises africaines.",
-    "logo": "/images/sahelsoft-logo-transparent.png",
-    "footerLogo": "/images/sahelsoft-logo-transparent.png",
+    "logo": "/images/sahelsoft-logo.webp",
+    "footerLogo": "/images/sahelsoft-logo-footer.webp",
     "mark": "/images/sahelsoft-mark-transparent.png"
   },
   "contact": {
     "email": "sahelsoft111@gmail.com",
-    "whatsappDisplay": "+223 76 41 79 85",
-    "whatsappNumber": "22376417985"
+    "whatsappDisplay": "+223 63 03 56 43",
+    "whatsappNumber": "22363035643"
   },
-  "playStoreLinks": {
-    "sugucash": "https://play.google.com/store/apps/details?id=com.sahelsoft.sugucash&pcampaignid=web_share"
-  },
-  "demoLinks": {
-    "stockFlowDemoUrl": "",
-    "agriSuiviDemoUrl": "",
-    "maliPaieDemoUrl": ""
-  },
-  "paymentMethods": [
+  "categories": [
     {
-      "name": "Orange Money",
-      "details": "+223 76 41 79 85"
+      "id": "gestion",
+      "label": "Gestion et finances",
+      "description": "Caisse, devis, factures et stock pour les commerces et PME."
     },
     {
-      "name": "Virement bancaire BDM",
-      "details": "Coordonnées bancaires à compléter",
-      "bank": {
-        "accountNumber": "",
-        "rib": "",
-        "swiftBic": ""
-      }
+      "id": "rh-fiscalite",
+      "label": "Paie, fiscalité et comptabilité",
+      "description": "Des outils conformes aux règles du Mali et au SYSCOHADA."
+    },
+    {
+      "id": "terrain",
+      "label": "Agriculture et transport",
+      "description": "Pour suivre une exploitation ou une flotte au quotidien."
     }
   ],
-  "sugucash": {
-    "id": "sugucash",
-    "name": "SuguCash",
-    "logo": "/images/sugucash-logo.svg",
-    "tag": "Application Android",
-    "subtitle": "Gestion simple des recettes, dépenses, dettes et paiements.",
-    "status": "Disponible sur Google Play",
-    "description": "SuguCash est une application SahelSoft de gestion financière simple pour suivre les recettes, les dépenses, les dettes, les paiements, les rapports financiers et l'historique de son activité. Elle fonctionne hors ligne et offre une interface claire, rapide et professionnelle.",
-    "features": [
-      "Suivi des recettes",
-      "Suivi des dépenses",
-      "Gestion des dettes",
-      "Paiements partiels",
-      "Historique financier",
-      "Rapports PDF",
-      "Sauvegarde locale",
-      "Fonctionne hors ligne",
-      "Statistiques financières",
-      "Paramètres"
-    ],
-    "screenshots": [
-      {
-        "src": "/images/sugucash/sugucash-01-dashboard.webp",
-        "alt": "Capture SuguCash - tableau de bord",
-        "label": "Tableau de bord"
-      },
-      {
-        "src": "/images/sugucash/sugucash-02-recettes.webp",
-        "alt": "Capture SuguCash - recettes",
-        "label": "Recettes"
-      },
-      {
-        "src": "/images/sugucash/sugucash-03-dettes.webp",
-        "alt": "Capture SuguCash - dettes",
-        "label": "Dettes"
-      },
-      {
-        "src": "/images/sugucash/sugucash-04-parametres.webp",
-        "alt": "Capture SuguCash - paramètres",
-        "label": "Paramètres"
-      }
-    ]
-  },
-  "applications": [
+  "products": [
     {
       "id": "sugucash",
       "name": "SuguCash",
-      "logo": "/images/sugucash-logo.svg",
-      "description": "Gestion simple des recettes, dépenses, dettes, paiements et rapports financiers. Fonctionne hors ligne.",
-      "status": "Disponible sur Google Play"
+      "icon": "",
+      "category": "gestion",
+      "tagline": "Votre caisse dans la poche",
+      "description": "Suivez vos recettes, dépenses, dettes et paiements au quotidien, même sans connexion Internet. Des rapports clairs pour savoir exactement où en est votre activité.",
+      "features": [
+        "Suivi des recettes",
+        "Suivi des dépenses",
+        "Gestion des dettes",
+        "Paiements partiels",
+        "Historique financier",
+        "Rapports PDF",
+        "Sauvegarde locale",
+        "Fonctionne hors ligne"
+      ],
+      "platforms": [
+        "Android"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible sur Google Play",
+      "price": "",
+      "device": "phone",
+      "screenshots": [
+        {
+          "src": "/images/sugucash/sugucash-01-dashboard.webp",
+          "alt": "Capture SuguCash - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/sugucash/sugucash-02-recettes.webp",
+          "alt": "Capture SuguCash - recettes",
+          "label": "Recettes"
+        },
+        {
+          "src": "/images/sugucash/sugucash-03-dettes.webp",
+          "alt": "Capture SuguCash - dettes",
+          "label": "Dettes"
+        },
+        {
+          "src": "/images/sugucash/sugucash-04-parametres.webp",
+          "alt": "Capture SuguCash - paramètres",
+          "label": "Paramètres"
+        }
+      ],
+      "links": {
+        "playStore": "https://play.google.com/store/apps/details?id=com.sahelsoft.sugucash&pcampaignid=web_share",
+        "windows": "",
+        "web": "",
+        "buy": ""
+      },
+      "detailPage": "/sugucash/"
+    },
+    {
+      "id": "sahel-caisse",
+      "name": "Sahel Caisse",
+      "icon": "/images/icons/sahel-caisse.webp",
+      "category": "gestion",
+      "tagline": "La caisse enregistreuse des petits commerces",
+      "description": "Encaissez vos ventes en quelques secondes, en espèces, Mobile Money ou à crédit. Scannez les codes-barres avec la caméra, suivez les dettes clients, les dépenses et le stock, et consultez vos rapports du jour, même sans connexion Internet.",
+      "features": [
+        "Encaissement rapide",
+        "Scan des codes-barres",
+        "Espèces, Mobile Money et crédit",
+        "Tickets de caisse",
+        "Dettes clients",
+        "Dépenses et stock",
+        "Rapports CSV, Excel et PDF",
+        "Fonctionne hors ligne"
+      ],
+      "platforms": [
+        "Web",
+        "PC",
+        "Mobile"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/sahel-caisse/sahel-caisse-pc-01-caisse.webp",
+          "alt": "Capture Sahel Caisse - caisse",
+          "label": "Caisse"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "https://caisse.sahelsoft.tech",
+        "buy": ""
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/sahel-caisse/sahel-caisse-03-rapports.webp",
+          "alt": "Capture Sahel Caisse - rapports",
+          "label": "Rapports"
+        },
+        {
+          "src": "/images/sahel-caisse/sahel-caisse-01-caisse.webp",
+          "alt": "Capture Sahel Caisse - caisse",
+          "label": "Caisse"
+        },
+        {
+          "src": "/images/sahel-caisse/sahel-caisse-02-encaissement.webp",
+          "alt": "Capture Sahel Caisse - encaissement",
+          "label": "Encaissement"
+        }
+      ]
+    },
+    {
+      "id": "devisio",
+      "name": "Devisio",
+      "icon": "/images/icons/devisio.png",
+      "category": "gestion",
+      "tagline": "Devis et factures professionnels en quelques minutes",
+      "description": "Créez des devis, factures et bons de livraison avec calcul automatique HT, TVA et TTC, votre logo et un modèle visuel au choix. Exportez en PDF ou vers Excel.",
+      "features": [
+        "Devis, factures et bons de livraison",
+        "Calcul HT / TVA / TTC automatique",
+        "Remises par ligne ou globales",
+        "4 modèles de document",
+        "Logo et pied de page personnalisés",
+        "Export PDF, CSV et Excel",
+        "FCFA et autres devises",
+        "Français et anglais"
+      ],
+      "platforms": [
+        "Web",
+        "PC",
+        "Mobile"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/devisio/devisio-01-devis.webp",
+          "alt": "Capture Devisio - devis",
+          "label": "Devis"
+        },
+        {
+          "src": "/images/devisio/devisio-02-facture.webp",
+          "alt": "Capture Devisio - facture",
+          "label": "Facture"
+        },
+        {
+          "src": "/images/devisio/devisio-03-modele-creatif.webp",
+          "alt": "Capture Devisio - modèle créatif",
+          "label": "Modèle créatif"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "https://devisio.sahelsoft.tech",
+        "buy": "https://dcshiuyj.mychariow.com/devisio"
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/devisio/devisio-mobile-01-devis.webp",
+          "alt": "Capture Devisio - devis",
+          "label": "Devis"
+        }
+      ]
     },
     {
       "id": "stock-flow",
       "name": "Stock Flow",
-      "logo": "/images/stock-flow.webp",
-      "description": "Gestion commerciale complète et suivi de stock pour commerces et PME.",
-      "status": "En développement"
+      "icon": "",
+      "category": "gestion",
+      "tagline": "Gestion commerciale et stock",
+      "description": "Gérez vos produits, vos magasins et vos mouvements de stock, établissez devis et factures, suivez clients, fournisseurs et commandes, et recevez une alerte avant chaque rupture. Sur ordinateur Windows et sur téléphone Android.",
+      "features": [
+        "Produits et catégories",
+        "Plusieurs magasins et transferts",
+        "Entrées, sorties et inventaire",
+        "Devis et factures PDF",
+        "Clients, fournisseurs et commandes",
+        "Alertes de stock faible",
+        "Rapports PDF et Excel",
+        "Utilisateurs et rôles"
+      ],
+      "platforms": [
+        "Windows",
+        "Android"
+      ],
+      "status": "soon",
+      "statusLabel": "Bientôt disponible",
+      "price": "50 000 FCFA",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/stock-flow/stock-flow-01-tableau-de-bord.webp",
+          "alt": "Capture Stock Flow - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/stock-flow/stock-flow-02-produits.webp",
+          "alt": "Capture Stock Flow - produits",
+          "label": "Produits"
+        },
+        {
+          "src": "/images/stock-flow/stock-flow-03-factures.webp",
+          "alt": "Capture Stock Flow - factures",
+          "label": "Factures"
+        },
+        {
+          "src": "/images/stock-flow/stock-flow-04-inventaire.webp",
+          "alt": "Capture Stock Flow - inventaire",
+          "label": "Inventaire"
+        },
+        {
+          "src": "/images/stock-flow/stock-flow-05-rapports.webp",
+          "alt": "Capture Stock Flow - rapports",
+          "label": "Rapports"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "",
+        "buy": ""
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/stock-flow/stock-flow-mobile-01-tableau-de-bord.webp",
+          "alt": "Capture Stock Flow Android - tableau de bord",
+          "label": "Tableau de bord"
+        }
+      ]
+    },
+    {
+      "id": "fisca-plus",
+      "name": "Fisca+",
+      "icon": "/images/icons/fisca-plus.png",
+      "category": "rh-fiscalite",
+      "tagline": "Votre assistant fiscal au Mali",
+      "description": "Calculez vos impôts et cotisations selon le Code général des impôts du Mali : revenus locatifs, salaires, INPS/AMO et impôt synthétique. Fisca+ vous rappelle vos échéances et prépare vos fiches récapitulatives.",
+      "features": [
+        "Revenus locatifs : IRF, TVA, CSS",
+        "Salaires : ITS, CFE, TL",
+        "Cotisations INPS / AMO",
+        "Impôt synthétique",
+        "Rappel des échéances de déclaration",
+        "Fiches récapitulatives imprimables",
+        "Fonctionne hors ligne",
+        "Données gardées sur votre appareil"
+      ],
+      "platforms": [
+        "Web",
+        "PC",
+        "Mobile"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/fisca-plus/fisca-pc-01-profil.webp",
+          "alt": "Capture Fisca+ - profil et échéances",
+          "label": "Profil et échéances"
+        },
+        {
+          "src": "/images/fisca-plus/fisca-pc-02-location.webp",
+          "alt": "Capture Fisca+ - revenus locatifs",
+          "label": "Revenus locatifs"
+        },
+        {
+          "src": "/images/fisca-plus/fisca-pc-03-salaires.webp",
+          "alt": "Capture Fisca+ - salaires et its",
+          "label": "Salaires et ITS"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "https://fiscaplus.sahelsoft.tech",
+        "buy": "https://dcshiuyj.mychariow.com/prd_29wf0iqr"
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/fisca-plus/fisca-01-profil.webp",
+          "alt": "Capture Fisca+ - profil et échéances",
+          "label": "Profil et échéances"
+        },
+        {
+          "src": "/images/fisca-plus/fisca-02-location.webp",
+          "alt": "Capture Fisca+ - revenus locatifs",
+          "label": "Revenus locatifs"
+        },
+        {
+          "src": "/images/fisca-plus/fisca-03-salaires.webp",
+          "alt": "Capture Fisca+ - salaires et its",
+          "label": "Salaires et ITS"
+        }
+      ]
+    },
+    {
+      "id": "sahelpaie",
+      "name": "SahelPaie",
+      "icon": "/images/icons/sahelpaie.png",
+      "category": "rh-fiscalite",
+      "tagline": "Bulletins de paie conformes pour le Mali",
+      "description": "Établissez les bulletins de paie de tous vos employés en quelques clics : ITS, INPS, AMO, congés et heures supplémentaires sont calculés automatiquement. Éditez l’état de salaire du mois, prêt à imprimer ou à exporter vers Excel.",
+      "features": [
+        "Bulletins ITS, INPS, AMO",
+        "Génération groupée du mois",
+        "État de salaire PDF et Excel",
+        "Gestion des congés",
+        "Heures supplémentaires",
+        "Fiche employé préremplie",
+        "Fonctionne hors ligne",
+        "Données gardées sur votre appareil"
+      ],
+      "platforms": [
+        "Web",
+        "PC",
+        "Mobile"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/sahelpaie/sahelpaie-01-tableau-de-bord.webp",
+          "alt": "Capture SahelPaie - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/sahelpaie/sahelpaie-02-bulletin.webp",
+          "alt": "Capture SahelPaie - bulletin de paie",
+          "label": "Bulletin de paie"
+        },
+        {
+          "src": "/images/sahelpaie/sahelpaie-03-etat-salaire.webp",
+          "alt": "Capture SahelPaie - état de salaire",
+          "label": "État de salaire"
+        },
+        {
+          "src": "/images/sahelpaie/sahelpaie-04-employes.webp",
+          "alt": "Capture SahelPaie - employés",
+          "label": "Employés"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "https://paie.sahelsoft.tech",
+        "buy": ""
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/sahelpaie/sahelpaie-mobile-01-tableau-de-bord.webp",
+          "alt": "Capture SahelPaie - tableau de bord",
+          "label": "Tableau de bord"
+        }
+      ]
+    },
+    {
+      "id": "sahelimmo",
+      "name": "SahelImmo",
+      "icon": "/images/icons/sahelimmo.png",
+      "category": "rh-fiscalite",
+      "tagline": "Immobilisations et amortissements SYSCOHADA",
+      "description": "Tenez le registre de vos immobilisations, calculez automatiquement les amortissements linéaires ou dégressifs, suivez les cessions et générez vos écritures comptables prêtes à importer.",
+      "features": [
+        "Registre des immobilisations",
+        "Amortissement linéaire et dégressif",
+        "Plan annuel ou mensuel",
+        "Cessions et plus/moins-values",
+        "Inventaire physique avec QR codes",
+        "Écritures comptables en CSV",
+        "Nomenclature SYSCOHADA révisé",
+        "Fonctionne hors ligne"
+      ],
+      "platforms": [
+        "Web",
+        "PC",
+        "Mobile"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/sahelimmo/sahelimmo-01-tableau-de-bord.webp",
+          "alt": "Capture SahelImmo - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/sahelimmo/sahelimmo-02-registre.webp",
+          "alt": "Capture SahelImmo - registre",
+          "label": "Registre"
+        },
+        {
+          "src": "/images/sahelimmo/sahelimmo-03-fiche.webp",
+          "alt": "Capture SahelImmo - fiche et plan d’amortissement",
+          "label": "Fiche et plan d’amortissement"
+        },
+        {
+          "src": "/images/sahelimmo/sahelimmo-04-ecritures.webp",
+          "alt": "Capture SahelImmo - écritures comptables",
+          "label": "Écritures comptables"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "https://immo.sahelsoft.tech",
+        "buy": ""
+      },
+      "detailPage": "",
+      "phoneShots": [
+        {
+          "src": "/images/sahelimmo/sahelimmo-mobile-01-tableau-de-bord.webp",
+          "alt": "Capture SahelImmo - tableau de bord",
+          "label": "Tableau de bord"
+        }
+      ]
     },
     {
       "id": "agrisuivi-pro",
       "name": "AgriSuivi Pro",
-      "logo": "/images/agrisuivi-pro.webp",
-      "description": "Gestion agricole, élevage, pisciculture, recettes et dépenses.",
-      "status": "En développement"
+      "icon": "/images/icons/agrisuivi-pro.webp",
+      "category": "terrain",
+      "tagline": "Toute l’exploitation sous contrôle",
+      "description": "Suivez l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances de votre exploitation avec une présentation claire et professionnelle.",
+      "features": [
+        "Agriculture et parcelles",
+        "Élevage et santé animale",
+        "Pisciculture",
+        "Recettes, dépenses et factures",
+        "Rentabilité par activité",
+        "Calendrier et alertes",
+        "Rapports PDF, Excel et CSV",
+        "Windows et Android"
+      ],
+      "platforms": [
+        "Android",
+        "Windows"
+      ],
+      "status": "available",
+      "statusLabel": "Disponible sur Google Play et Windows",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-win-01-tableau-de-bord.webp",
+          "alt": "Capture AgriSuivi Pro Windows - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-win-02-elevage.webp",
+          "alt": "Capture AgriSuivi Pro Windows - élevage",
+          "label": "Élevage"
+        },
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-win-03-rentabilite.webp",
+          "alt": "Capture AgriSuivi Pro Windows - rentabilité",
+          "label": "Rentabilité"
+        },
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-win-04-calendrier.webp",
+          "alt": "Capture AgriSuivi Pro Windows - calendrier",
+          "label": "Calendrier"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "",
+        "buy": ""
+      },
+      "detailPage": "/agrisuivi-pro/",
+      "phoneShots": [
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-01-dashboard.webp",
+          "alt": "Capture AgriSuivi Pro - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-02-agriculture.webp",
+          "alt": "Capture AgriSuivi Pro - agriculture",
+          "label": "Agriculture"
+        },
+        {
+          "src": "/images/agrisuivi-pro/agrisuivi-03-elevage.webp",
+          "alt": "Capture AgriSuivi Pro - élevage",
+          "label": "Élevage"
+        }
+      ]
     },
     {
       "id": "fleetmaster",
       "name": "FleetMaster",
-      "logo": "/images/fleetmaster-logo.svg",
-      "description": "Gestion de flotte, véhicules, entretiens et coûts d'exploitation.",
-      "status": "En développement"
-    },
-    {
-      "id": "mali-paie-pro",
-      "name": "Mali Paie Pro",
-      "logo": "/images/mali-paie-pro.webp",
-      "description": "Gestion de paie, employés, bulletins, ITS, INPS et AMO.",
-      "status": "En développement"
+      "icon": "/images/icons/fleetmaster.webp",
+      "category": "terrain",
+      "tagline": "Gestion de flotte automobile",
+      "description": "Pilotez votre parc automobile : véhicules, maintenance préventive, carburant, pannes et coût total par véhicule. Des alertes automatiques vous préviennent des entretiens, documents et consommations anormales.",
+      "features": [
+        "Fiches véhicules et kilométrage",
+        "Maintenance préventive et vidanges",
+        "Suivi du carburant et anomalies",
+        "Alertes automatiques",
+        "Coût total par véhicule (TCO)",
+        "Ordres de travail et pièces détachées",
+        "Tableau de bord direction",
+        "Export PDF"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "status": "dev",
+      "statusLabel": "En développement",
+      "price": "",
+      "device": "desktop",
+      "screenshots": [
+        {
+          "src": "/images/fleetmaster/fleetmaster-01-tableau-de-bord.webp",
+          "alt": "Capture FleetMaster - tableau de bord",
+          "label": "Tableau de bord"
+        },
+        {
+          "src": "/images/fleetmaster/fleetmaster-02-alertes.webp",
+          "alt": "Capture FleetMaster - alertes",
+          "label": "Alertes"
+        },
+        {
+          "src": "/images/fleetmaster/fleetmaster-03-vehicules.webp",
+          "alt": "Capture FleetMaster - véhicules",
+          "label": "Véhicules"
+        },
+        {
+          "src": "/images/fleetmaster/fleetmaster-04-direction.webp",
+          "alt": "Capture FleetMaster - direction générale",
+          "label": "Direction générale"
+        }
+      ],
+      "links": {
+        "playStore": "",
+        "windows": "",
+        "web": "",
+        "buy": ""
+      },
+      "detailPage": ""
     }
   ],
-  "softwareCatalog": [
-    {
-      "id": "stock-flow",
-      "name": "Stock Flow",
-      "tag": "Commerce et stock",
-      "image": "/images/stock-flow.webp",
-      "demoUrlKey": "stockFlowDemoUrl",
-      "price": "50 000 FCFA",
-      "description": "Gestion commerciale et stock pour commerces, PME, ONG et entreprises.",
-      "features": [
-        "Produits",
-        "Inventaire",
-        "Facturation",
-        "TVA",
-        "Multi-magasins",
-        "Rapports PDF/Excel"
-      ]
-    },
-    {
-      "id": "agrisuivi-pro",
-      "name": "AgriSuivi Pro",
-      "tag": "Agriculture et élevage",
-      "image": "/images/agrisuivi-pro.webp",
-      "demoUrlKey": "agriSuiviDemoUrl",
-      "price": "30 000 FCFA",
-      "description": "Suivi des exploitations agricoles, élevages, piscicultures, recettes et dépenses.",
-      "features": [
-        "Agriculture",
-        "Élevage",
-        "Pisciculture",
-        "Dépenses",
-        "Recettes",
-        "Suivi global"
-      ]
-    },
-    {
-      "id": "mali-paie-pro",
-      "name": "Mali Paie Pro",
-      "tag": "Paie au Mali",
-      "image": "/images/mali-paie-pro.webp",
-      "demoUrlKey": "maliPaieDemoUrl",
-      "price": "75 000 FCFA",
-      "description": "Gestion professionnelle de la paie, employés, bulletins, ITS, INPS et AMO.",
-      "features": [
-        "Employés",
-        "Contrats",
-        "Bulletins",
-        "ITS",
-        "INPS",
-        "AMO"
-      ]
-    }
-  ],
-  "whyChoose": [
-    "Applications professionnelles",
-    "Fonctionnement rapide et fiable",
-    "Utilisation simple et intuitive",
-    "Support technique réactif",
-    "Évolution permanente",
-    "Compatible Android"
-  ],
-  "mission": {
-    "text": "Notre mission est d'accompagner la transformation numérique des entreprises africaines grâce à des logiciels modernes, simples et accessibles pour booster leur productivité et leur croissance."
-  },
-  "screenshotGallery": [],
-  "future": {
-    "paymentUrl": "",
-    "downloadsFolder": "/downloads/",
-    "screenshotsFolder": "/images/screenshots/"
-  },
-  "agriSuiviPro": {
-    "id": "agrisuivi-pro",
-    "name": "AgriSuivi Pro",
-    "tag": "Application agriculture",
-    "subtitle": "Gestion intégrée de votre exploitation.",
-    "description": "Suivez l'agriculture, l'élevage, la pisciculture, les recettes, les dépenses et les performances de votre exploitation avec une présentation claire et professionnelle.",
-    "screenshots": [
+  "about": {
+    "title": "Des logiciels de gestion pensés pour les entreprises du Sahel",
+    "intro": "SahelSoft est un éditeur de logiciels de gestion basé à Bamako, au Mali. Nous concevons des applications simples et fiables pour les commerces, PME, exploitations agricoles et organisations d’Afrique de l’Ouest : caisse, facturation, stock, paie, fiscalité, immobilisations, agriculture et gestion de flotte.",
+    "mission": "Rendre les outils de gestion professionnels accessibles à toutes les entreprises africaines, quelle que soit leur taille, pour les aider à mieux s’organiser, à respecter leurs obligations et à prendre de meilleures décisions.",
+    "vision": "Devenir la référence des logiciels de gestion adaptés aux réalités de l’Afrique de l’Ouest : connexion limitée, paiements mobiles et réglementations locales.",
+    "commitments": [
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-01-dashboard.webp",
-        "alt": "Capture AgriSuivi Pro - tableau de bord",
-        "label": "Tableau de bord"
+        "icon": "terrain",
+        "title": "Adaptés au terrain",
+        "text": "Utilisables hors connexion, en FCFA, avec Mobile Money, sur téléphone comme sur ordinateur."
       },
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-02-agriculture.webp",
-        "alt": "Capture AgriSuivi Pro - agriculture",
-        "label": "Agriculture"
+        "icon": "conformite",
+        "title": "Conformes aux règles locales",
+        "text": "ITS, INPS, AMO, impôt synthétique et SYSCOHADA révisé intégrés dans nos logiciels."
       },
       {
-        "src": "/images/agrisuivi-pro/agrisuivi-03-elevage.webp",
-        "alt": "Capture AgriSuivi Pro - élevage",
-        "label": "Élevage"
+        "icon": "donnees",
+        "title": "Vos données vous appartiennent",
+        "text": "Enregistrées sur votre appareil, jamais revendues. Vous gardez le contrôle."
+      },
+      {
+        "icon": "support",
+        "title": "Un accompagnement de proximité",
+        "text": "Installation, prise en main et assistance réactive par WhatsApp et e-mail."
       }
     ]
   }
