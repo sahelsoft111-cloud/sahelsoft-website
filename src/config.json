@@ -3,7 +3,7 @@
     "url": "https://sahelsoft.tech",
     "title": "SahelSoft | Solutions numériques professionnelles",
     "description": "SahelSoft développe des logiciels modernes pour les entreprises, commerces, PME, ONG, exploitations agricoles et organisations africaines.",
-    "keywords": "SahelSoft, logiciels professionnels, SuguCash, Devisio, Stock Flow, Fisca+, SahelPaie, SahelImmo, AgriSuivi Pro, FleetMaster, paie Mali, fiscalité Mali, SYSCOHADA, devis factures"
+    "keywords": "SahelSoft, logiciels professionnels, SuguCash, Devisio, SahelStock, Fisca+, SahelPaie, SahelImmo, AgriSuivi Pro, FleetMaster, paie Mali, fiscalité Mali, SYSCOHADA, devis factures"
   },
   "brand": {
     "name": "SahelSoft",
@@ -63,9 +63,9 @@
       "device": "phone",
       "screenshots": [
         {
-          "src": "/images/sugucash/sugucash-01-dashboard.webp",
-          "alt": "Capture SuguCash - tableau de bord",
-          "label": "Tableau de bord"
+          "src": "/images/sugucash/sugucash-00-accueil.webp",
+          "alt": "Capture SuguCash - accueil avec bénéfice, recettes et dépenses",
+          "label": "Accueil"
         },
         {
           "src": "/images/sugucash/sugucash-02-recettes.webp",
@@ -208,72 +208,62 @@
       ]
     },
     {
-      "id": "stock-flow",
-      "name": "Stock Flow",
-      "icon": "",
+      "id": "sahelstock",
+      "name": "SahelStock",
+      "icon": "/images/icons/sahelstock.png",
       "category": "gestion",
-      "tagline": "Gestion commerciale et stock",
-      "description": "Gérez vos produits, vos magasins et vos mouvements de stock, établissez devis et factures, suivez clients, fournisseurs et commandes, et recevez une alerte avant chaque rupture. Sur ordinateur Windows et sur téléphone Android.",
+      "tagline": "Stock, ventes et crédits clients",
+      "description": "Gérez le stock de vos boutiques et dépôts, vos ventes et vos crédits clients, même sans Internet. Suivez votre bénéfice, recevez une alerte avant chaque rupture et éditez vos bons et rapports PDF avec votre logo.",
       "features": [
-        "Produits et catégories",
-        "Plusieurs magasins et transferts",
-        "Entrées, sorties et inventaire",
-        "Devis et factures PDF",
-        "Clients, fournisseurs et commandes",
-        "Alertes de stock faible",
-        "Rapports PDF et Excel",
-        "Utilisateurs et rôles"
+        "Plusieurs magasins et dépôts",
+        "Entrées, sorties et transferts",
+        "Ventes à crédit et encaissements",
+        "Alertes de stock bas",
+        "Inventaire et écarts",
+        "Bénéfice et valeur du stock",
+        "Bons et rapports PDF avec logo",
+        "Travail en équipe, français et anglais"
       ],
       "platforms": [
-        "Windows",
-        "Android"
+        "Web",
+        "PC",
+        "Mobile"
       ],
-      "status": "soon",
-      "statusLabel": "Bientôt disponible",
+      "status": "available",
+      "statusLabel": "Disponible",
       "price": "",
       "device": "desktop",
       "screenshots": [
         {
-          "src": "/images/stock-flow/stock-flow-01-tableau-de-bord.webp",
-          "alt": "Capture Stock Flow - tableau de bord",
+          "src": "/images/sahelstock/sahelstock-01-tableau-de-bord.webp",
+          "alt": "Capture SahelStock - tableau de bord",
           "label": "Tableau de bord"
         },
         {
-          "src": "/images/stock-flow/stock-flow-02-produits.webp",
-          "alt": "Capture Stock Flow - produits",
+          "src": "/images/sahelstock/sahelstock-02-produits.webp",
+          "alt": "Capture SahelStock - produits",
           "label": "Produits"
         },
         {
-          "src": "/images/stock-flow/stock-flow-03-factures.webp",
-          "alt": "Capture Stock Flow - factures",
-          "label": "Factures"
-        },
+          "src": "/images/sahelstock/sahelstock-03-mouvements.webp",
+          "alt": "Capture SahelStock - mouvements",
+          "label": "Mouvements"
+        }
+      ],
+      "phoneShots": [
         {
-          "src": "/images/stock-flow/stock-flow-04-inventaire.webp",
-          "alt": "Capture Stock Flow - inventaire",
-          "label": "Inventaire"
-        },
-        {
-          "src": "/images/stock-flow/stock-flow-05-rapports.webp",
-          "alt": "Capture Stock Flow - rapports",
-          "label": "Rapports"
+          "src": "/images/sahelstock/sahelstock-mobile-01-tableau-de-bord.webp",
+          "alt": "Capture SahelStock - tableau de bord",
+          "label": "Tableau de bord"
         }
       ],
       "links": {
         "playStore": "",
         "windows": "",
-        "web": "",
-        "buy": ""
+        "web": "https://sahelstock.sahelsoft.tech",
+        "buy": "https://dcshiuyj.mychariow.com/sahelstock"
       },
-      "detailPage": "",
-      "phoneShots": [
-        {
-          "src": "/images/stock-flow/stock-flow-mobile-01-tableau-de-bord.webp",
-          "alt": "Capture Stock Flow Android - tableau de bord",
-          "label": "Tableau de bord"
-        }
-      ],
-      "showInHero": false
+      "detailPage": ""
     },
     {
       "id": "fisca-plus",

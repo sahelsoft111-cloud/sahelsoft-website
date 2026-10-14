@@ -53,7 +53,7 @@ const heroPillars = [
 // Used when a product has no logo file in config.json: [icon, tile colour].
 const fallbackIcons = {
   sugucash: [ShoppingCart, "bg-field"],
-  "stock-flow": [Store, "bg-ocean"],
+  "sahelstock": [Store, "bg-ocean"],
 };
 
 const platformIcons = {

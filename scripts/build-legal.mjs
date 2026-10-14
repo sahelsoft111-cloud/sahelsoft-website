@@ -141,7 +141,7 @@ page({
   file: "privacy.html",
   canonical: "/privacy.html",
   title: "Politique de confidentialité | SahelSoft",
-  description: "Politique de confidentialité de SahelSoft et de ses applications : SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, Stock Flow et FleetMaster.",
+  description: "Politique de confidentialité de SahelSoft et de ses applications : SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock et FleetMaster.",
   eyebrow: "Centre de confidentialité",
   heading: "Politique de confidentialité",
   lead: "Ce document explique quelles données les applications et le site de SahelSoft traitent, pourquoi, avec qui elles peuvent être partagées et comment vous gardez le contrôle sur elles.",
@@ -153,20 +153,21 @@ page({
 <div class="cards">
 <a class="card" href="#sugucash"><strong>SuguCash</strong><span>Android · politique détaillée ci-dessous</span></a>
 <a class="card" href="/privacy/agrisuivi-pro/"><strong>AgriSuivi Pro</strong><span>Android et Windows · politique dédiée</span></a>
-<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</strong><span>Applications web · section dédiée</span></a>
-<a class="card" href="#logiciels-windows"><strong>Stock Flow, FleetMaster</strong><span>Logiciels Windows · section dédiée</span></a>
+<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock</strong><span>Applications web · section dédiée</span></a>
+<a class="card" href="#logiciels-windows"><strong>FleetMaster</strong><span>Logiciel Windows · section dédiée</span></a>
 </div>`),
     section("principes", "Nos principes", `<ul>
 <li><strong>Vos données vous appartiennent.</strong> Les informations que vous saisissez (ventes, dépenses, employés, immobilisations, exploitation…) restent votre propriété.</li>
-<li><strong>Stockage local par défaut.</strong> Nos applications enregistrent vos données sur votre appareil. Elles fonctionnent hors ligne et n'envoient pas vos données de gestion à SahelSoft.</li>
+<li><strong>Stockage local par défaut.</strong> Nos applications enregistrent vos données sur votre appareil. Elles fonctionnent hors ligne et n'envoient pas vos données de gestion à SahelSoft, sauf si vous activez vous-même le travail en équipe en ligne.</li>
 <li><strong>Aucune vente de données.</strong> SahelSoft ne vend, ne loue et n'échange pas vos données personnelles.</li>
-<li><strong>Minimum nécessaire.</strong> Les rares données qui quittent votre appareil (activation de licence, sauvegarde en ligne choisie par vous, diagnostic photo) servent uniquement à la fonctionnalité demandée.</li>
+<li><strong>Minimum nécessaire.</strong> Les rares données qui quittent votre appareil (activation de licence, travail en équipe, sauvegarde en ligne choisie par vous, diagnostic photo) servent uniquement à la fonctionnalité demandée.</li>
 </ul>`),
     section("donnees", "Données traitées et finalités", `<div class="table-wrap"><table>
 <thead><tr><th>Données</th><th>Où elles se trouvent</th><th>Finalité</th></tr></thead>
 <tbody>
 <tr><td>Données de gestion saisies dans les applications (ventes, dépenses, dettes, stocks, bulletins, immobilisations, exploitation…)</td><td>Sur votre appareil uniquement</td><td>Faire fonctionner l'application</td></tr>
 <tr><td>Comptes utilisateurs locaux (nom, identifiant, mot de passe protégé)</td><td>Sur votre appareil uniquement</td><td>Sécuriser l'accès à l'application</td></tr>
+<tr><td>Données de l'entreprise et comptes des membres, si vous activez le travail en équipe (Sahel Caisse, SahelStock, SahelPaie, SahelImmo)</td><td>Sur vos appareils et sur nos serveurs hébergés par Supabase</td><td>Partager les données entre les membres de l'entreprise selon leurs droits</td></tr>
 <tr><td>Clé de licence et identifiant technique de l'appareil</td><td>Transmis lors de l'activation (applications web)</td><td>Vérifier la validité de la licence et le nombre d'appareils</td></tr>
 <tr><td>Nom, e-mail et informations de paiement lors d'un achat</td><td>Chez la plateforme de vente (Chariow) ou Google Play</td><td>Traiter la commande et délivrer la licence</td></tr>
 <tr><td>Nom et adresse e-mail du compte Google (si vous choisissez « Se connecter avec Google »)</td><td>Sur votre appareil</td><td>Créer ou ouvrir votre compte dans l'application</td></tr>
@@ -186,22 +187,24 @@ page({
 <p>La suppression de vos données SuguCash est expliquée sur la page <a href="/delete-account.html#sugucash">Suppression de compte SuguCash</a>.</p>`),
     section("agrisuivi-pro", "AgriSuivi Pro", `<p>AgriSuivi Pro dispose d'une politique de confidentialité dédiée, qui détaille notamment la connexion Google, la sauvegarde Google Drive et le diagnostic photo par intelligence artificielle.</p>
 <div class="actions"><a class="btn btn-primary" href="/privacy/agrisuivi-pro/">Lire la politique AgriSuivi Pro</a></div>`),
-    section("applications-web", "Applications web : Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse", `<p>Ces applications s'utilisent dans le navigateur, sur ordinateur comme sur téléphone, et peuvent être installées comme une application.</p>
+    section("applications-web", "Applications web : Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock", `<p>Ces applications s'utilisent dans le navigateur, sur ordinateur comme sur téléphone, et peuvent être installées comme une application.</p>
 <ul>
-<li><strong>Données enregistrées dans votre navigateur</strong> (stockage local) : devis et factures, profil fiscal, employés et bulletins, immobilisations, ventes et stock selon l'application. Elles ne sont pas envoyées à SahelSoft.</li>
+<li><strong>Données enregistrées dans votre navigateur</strong> (stockage local) : devis et factures, profil fiscal, employés et bulletins, immobilisations, ventes et stock selon l'application. Sans compte d'équipe, elles ne quittent pas votre appareil.</li>
+<li><strong>Comptes et travail en équipe (facultatif — Sahel Caisse, SahelStock, SahelPaie, SahelImmo)</strong> : si le gérant crée un compte en ligne pour son entreprise, les données de l'entreprise (par exemple produits, ventes, clients, employés ou immobilisations selon l'application) ainsi que le nom et l'identifiant de chaque membre sont synchronisés entre les appareils autorisés, via nos serveurs hébergés par Supabase, par connexion chiffrée. L'accès est limité selon le rôle de chaque membre (gérant, vendeur, magasinier, lecture seule…), contrôlé par le serveur. L'application continue de fonctionner hors ligne et envoie les changements dès qu'Internet est disponible.</li>
+<li><strong>Devisio et Fisca+</strong> ne proposent pas de synchronisation en ligne : leurs données restent uniquement dans votre navigateur.</li>
 <li><strong>Activation de la licence</strong> : lors de l'activation puis lors de vérifications périodiques, la clé de licence et un identifiant technique généré aléatoirement pour l'appareil sont transmis à notre serveur (hébergé par Netlify), qui interroge la plateforme de vente Chariow. Aucune donnée de gestion n'est transmise.</li>
 <li><strong>Achat</strong> : le paiement et vos coordonnées d'achat sont traités par Chariow, selon ses propres conditions.</li>
 <li><strong>Sauvegarde</strong> : l'export de sauvegarde crée un fichier sur votre appareil ; vous choisissez où le conserver.</li>
 </ul>
 <div class="note amber">Vider les données du navigateur ou désinstaller l'application supprime définitivement les données non sauvegardées. Pensez à exporter une sauvegarde régulièrement.</div>`),
-    section("logiciels-windows", "Logiciels Windows : Stock Flow, FleetMaster", `<p>Ces logiciels s'installent sur votre ordinateur. Les données (produits, stocks, factures, véhicules, entretiens…) et la licence sont enregistrées localement sur l'ordinateur et ne sont pas transmises à SahelSoft. Leur version Android, lorsqu'elle existe, fonctionne selon les mêmes principes.</p>`),
+    section("logiciels-windows", "Logiciel Windows : FleetMaster", `<p>FleetMaster s'installe sur votre ordinateur. Les données (véhicules, entretiens, carburant, coûts…) et la licence sont enregistrées localement sur l'ordinateur et ne sont pas transmises à SahelSoft.</p>`),
     section("site-web", "Site sahelsoft.tech", `<p>Le site ne dépose pas de cookie publicitaire et n'utilise pas d'outil de mesure d'audience. Il est hébergé par Netlify, qui enregistre des journaux techniques (adresse IP, navigateur, pages demandées) pour assurer la sécurité et le bon fonctionnement du service. Les polices d'écriture sont chargées depuis Google Fonts. Les boutons « WhatsApp » ouvrent l'application WhatsApp, soumise à ses propres conditions.</p>`),
     section("partage", "Partage avec des tiers", `<p>SahelSoft ne partage vos données qu'avec les prestataires nécessaires au fonctionnement des services, et uniquement pour les fonctionnalités que vous utilisez :</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Prestataire</th><th>Rôle</th></tr></thead>
 <tbody>
 <tr><td>Google (Play, AdMob, connexion Google, Drive, Gemini)</td><td>Distribution et paiement Android, publicité (SuguCash), connexion, sauvegarde, diagnostic photo (AgriSuivi Pro)</td></tr>
-<tr><td>Supabase</td><td>Hébergement du service de diagnostic photo d'AgriSuivi Pro</td></tr>
+<tr><td>Supabase</td><td>Hébergement de la synchronisation en équipe (Sahel Caisse, SahelStock, SahelPaie, SahelImmo) et du diagnostic photo d'AgriSuivi Pro</td></tr>
 <tr><td>Chariow</td><td>Vente en ligne et gestion des licences des applications web</td></tr>
 <tr><td>Netlify</td><td>Hébergement du site et des applications web</td></tr>
 </tbody></table></div>
@@ -209,6 +212,7 @@ page({
     section("conservation", "Durée de conservation", `<ul>
 <li><strong>Données locales</strong> : conservées sur votre appareil jusqu'à ce que vous les supprimiez ou désinstalliez l'application.</li>
 <li><strong>Sauvegardes Google Drive</strong> : conservées dans votre Drive jusqu'à ce que vous les supprimiez.</li>
+<li><strong>Données synchronisées en équipe</strong> : conservées tant que le compte de l'entreprise est actif, puis supprimées à la demande du gérant.</li>
 <li><strong>Données de licence</strong> : conservées pendant la durée de la licence, puis le temps nécessaire aux obligations comptables.</li>
 <li><strong>Échanges avec le support</strong> : conservés le temps de traiter la demande, puis au maximum 3 ans après le dernier contact.</li>
 </ul>`),
@@ -312,8 +316,8 @@ page({
     section("choisir", "Choisissez votre application", `<div class="cards">
 <a class="card" href="#sugucash"><strong>SuguCash</strong><span>Procédure détaillée ci-dessous</span></a>
 <a class="card" href="/delete-account/agrisuivi-pro/"><strong>AgriSuivi Pro</strong><span>Page dédiée</span></a>
-<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse</strong><span>Applications web</span></a>
-<a class="card" href="#logiciels-windows"><strong>Stock Flow, FleetMaster</strong><span>Logiciels Windows</span></a>
+<a class="card" href="#applications-web"><strong>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock</strong><span>Applications web</span></a>
+<a class="card" href="#logiciels-windows"><strong>FleetMaster</strong><span>Logiciel Windows</span></a>
 </div>`),
     section("sugucash", "SuguCash", `<p>Application SuguCash, éditée par <strong>SahelSoft</strong>.</p>
 <h3>Supprimer vos données vous-même</h3>
@@ -336,13 +340,14 @@ ${requestTemplate("SuguCash")}
 </tbody></table></div>`),
     section("agrisuivi-pro", "AgriSuivi Pro", `<p>La procédure complète de suppression pour AgriSuivi Pro (Android et Windows) est disponible sur sa page dédiée.</p>
 <div class="actions"><a class="btn btn-primary" href="/delete-account/agrisuivi-pro/">Supprimer mon compte AgriSuivi Pro</a></div>`),
-    section("applications-web", "Applications web", `<p>Devisio, Fisca+, SahelPaie, SahelImmo et Sahel Caisse enregistrent vos données dans votre navigateur.</p>
+    section("applications-web", "Applications web", `<p>Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse et SahelStock enregistrent vos données dans votre navigateur. Sahel Caisse, SahelStock, SahelPaie et SahelImmo peuvent aussi les synchroniser en ligne si vous avez créé un compte d'équipe.</p>
 <ol class="steps">
 <li>Utilisez l'option de suppression de l'application (par exemple « Tout effacer » ou « Données » dans les paramètres), ou effacez les données du site dans les réglages de votre navigateur.</li>
 <li>Si l'application est installée sur votre appareil, désinstallez-la.</li>
+<li><strong>Compte d'équipe</strong> (Sahel Caisse, SahelStock, SahelPaie, SahelImmo) : pour supprimer le compte de l'entreprise et toutes les données synchronisées en ligne, le gérant écrit à ${mail}.</li>
 <li>Pour supprimer les informations liées à votre achat ou à votre licence, écrivez à ${mail} en indiquant votre clé de licence.</li>
 </ol>`),
-    section("logiciels-windows", "Logiciels Windows", `<p>Pour Stock Flow et FleetMaster, les données sont enregistrées sur votre ordinateur. Désinstallez le logiciel puis supprimez son dossier de données pour tout effacer. SahelSoft ne détient pas de copie de ces données.</p>`),
+    section("logiciels-windows", "Logiciel Windows", `<p>Pour FleetMaster, les données sont enregistrées sur votre ordinateur. Désinstallez le logiciel puis supprimez son dossier de données pour tout effacer. SahelSoft ne détient pas de copie de ces données.</p>`),
     section("delais", "Délais et confirmation", `<p>Les demandes envoyées par e-mail sont traitées dans un délai maximal de <strong>30 jours</strong>. Vous recevez une confirmation une fois la suppression effectuée.</p>`),
     section("contact", "Contact", contact),
   ],
@@ -407,7 +412,7 @@ page({
   chips: ["S'applique à toutes les applications SahelSoft"],
   sections: [
     section("editeur", "Éditeur", editor),
-    section("objet", "Objet", `<p>Ces conditions définissent les règles d'utilisation des applications Android, logiciels Windows et applications web édités par SahelSoft (SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, Stock Flow, FleetMaster), ainsi que du site sahelsoft.tech.</p>`),
+    section("objet", "Objet", `<p>Ces conditions définissent les règles d'utilisation des applications Android, logiciels Windows et applications web édités par SahelSoft (SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock, FleetMaster), ainsi que du site sahelsoft.tech.</p>`),
     section("acces", "Accès aux services", `<ul>
 <li>Les applications Android sont distribuées via Google Play ; les applications web sont accessibles depuis un navigateur ; les logiciels Windows s'installent sur ordinateur.</li>
 <li>Certaines applications fonctionnent en version de démonstration ou gratuite, avec des fonctionnalités limitées.</li>
@@ -427,7 +432,7 @@ page({
     section("calculs", "Calculs fiscaux, sociaux et comptables", `<p>Fisca+, SahelPaie, SahelImmo et les autres outils de SahelSoft calculent des montants (impôts, cotisations, bulletins de paie, amortissements, écritures) à partir des règles en vigueur connues au moment de leur conception et des informations saisies par l'utilisateur.</p>
 <div class="note amber">Ces résultats sont une <strong>aide à la gestion</strong>. Ils ne constituent pas un conseil fiscal, juridique ou comptable et ne remplacent pas les formulaires officiels. L'utilisateur doit vérifier les montants avant toute déclaration ou paiement et, en cas de doute, consulter un professionnel ou l'administration compétente.</div>`),
     section("ia", "Diagnostic par intelligence artificielle", `<p>Le diagnostic photo d'AgriSuivi Pro fournit une indication générée automatiquement. Il peut être incomplet ou inexact et ne remplace pas l'avis d'un vétérinaire, d'un agronome ou d'un technicien qualifié.</p>`),
-    section("propriete", "Propriété intellectuelle", `<p>Les logiciels, marques (SahelSoft, SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, Stock Flow, FleetMaster), logos, textes et visuels sont la propriété de SahelSoft. Toute reproduction sans autorisation écrite est interdite.</p>`),
+    section("propriete", "Propriété intellectuelle", `<p>Les logiciels, marques (SahelSoft, SuguCash, AgriSuivi Pro, Devisio, Fisca+, SahelPaie, SahelImmo, Sahel Caisse, SahelStock, FleetMaster), logos, textes et visuels sont la propriété de SahelSoft. Toute reproduction sans autorisation écrite est interdite.</p>`),
     section("responsabilite", "Responsabilité", `<p>SahelSoft met tout en œuvre pour fournir des logiciels fiables et les améliorer régulièrement, sans pouvoir garantir l'absence totale d'erreurs ou d'interruptions. SahelSoft ne pourra être tenu responsable des dommages indirects résultant de l'utilisation des logiciels, d'une erreur de saisie, d'une perte de données non sauvegardées ou d'une décision prise sur la base des résultats affichés.</p>`),
     section("support", "Assistance et mises à jour", `<p>Le support est assuré par e-mail (${mail}) et par WhatsApp (${whatsapp}). Les mises à jour des applications web sont appliquées automatiquement ; celles des applications Android via Google Play ; celles des logiciels Windows par un nouvel installateur fourni par SahelSoft.</p>`),
     section("modifications", "Modification des conditions", `<p>SahelSoft peut modifier ces conditions. La version en vigueur est celle publiée sur cette page, avec sa date de mise à jour.</p>`),
