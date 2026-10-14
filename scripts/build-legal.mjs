@@ -54,7 +54,7 @@ function page({ file, canonical, title, description, eyebrow, heading, lead, nav
   <body>
     <header class="top">
       <div class="top-inner">
-        <a class="brand" href="/" aria-label="Accueil SahelSoft"><img src="/images/sahelsoft-logo.webp" width="240" height="64" alt="SahelSoft" /></a>
+        <a class="brand" href="/" aria-label="Accueil SahelSoft"><img src="/images/sahelsoft-logo-v2.webp" width="240" height="64" alt="SahelSoft" /></a>
         <nav class="top-nav" aria-label="Pages légales">${navLinks}</nav>
       </div>
     </header>
