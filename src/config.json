@@ -68,17 +68,17 @@
           "label": "Accueil"
         },
         {
-          "src": "/images/sugucash/sugucash-02-recettes.webp",
+          "src": "/images/sugucash/sugucash-v2-recettes.webp",
           "alt": "Capture SuguCash - recettes",
           "label": "Recettes"
         },
         {
-          "src": "/images/sugucash/sugucash-03-dettes.webp",
+          "src": "/images/sugucash/sugucash-v2-dettes.webp",
           "alt": "Capture SuguCash - dettes",
           "label": "Dettes"
         },
         {
-          "src": "/images/sugucash/sugucash-04-parametres.webp",
+          "src": "/images/sugucash/sugucash-v2-parametres.webp",
           "alt": "Capture SuguCash - paramètres",
           "label": "Paramètres"
         }
